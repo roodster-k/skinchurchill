@@ -3,7 +3,7 @@ import os
 base_dir = "/Users/kei/Desktop/Antigravity x Churchill SkinCheck"
 
 def create_html(lang, title, desc, url_path, content, og_title):
-    lang_prefix = f"/{lang}/"
+    lang_prefix = f"../{lang}/"
     
     header_nav = f"""
             <nav class="nav-links">
@@ -49,9 +49,9 @@ def create_html(lang, title, desc, url_path, content, og_title):
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/fr/services.html#bilan">Bilan cutané complet</a></li>
-                        <li><a href="/fr/services.html#medical">Ablation médicale suspecte</a></li>
-                        <li><a href="/fr/services.html#cosmetique">Ablation cosmétique bénigne</a></li>
+                        <li><a href="../fr/services.html#bilan">Bilan cutané complet</a></li>
+                        <li><a href="../fr/services.html#medical">Ablation médicale suspecte</a></li>
+                        <li><a href="../fr/services.html#cosmetique">Ablation cosmétique bénigne</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -70,15 +70,15 @@ def create_html(lang, title, desc, url_path, content, og_title):
             </div>
             <div class="footer-bottom">
                 <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Bruxelles</span>
-                <span class="text-muted">Site réalisé par Roots Agency | <a href="/fr/mentions-legales.html" class="text-muted">Mentions légales</a></span>
+                <span class="text-muted">Site réalisé par Roots Agency | <a href="../fr/mentions-legales.html" class="text-muted">Mentions légales</a></span>
             </div>
 """ if lang == 'fr' else f"""
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/en/services.html#bilan">Comprehensive mole check</a></li>
-                        <li><a href="/en/services.html#medical">Medical lesion removal</a></li>
-                        <li><a href="/en/services.html#cosmetique">Cosmetic mole removal</a></li>
+                        <li><a href="../en/services.html#bilan">Comprehensive mole check</a></li>
+                        <li><a href="../en/services.html#medical">Medical lesion removal</a></li>
+                        <li><a href="../en/services.html#cosmetique">Cosmetic mole removal</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -97,7 +97,7 @@ def create_html(lang, title, desc, url_path, content, og_title):
             </div>
             <div class="footer-bottom">
                 <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Brussels</span>
-                <span class="text-muted">Site by Roots Agency | <a href="/en/legal.html" class="text-muted">Legal mentions</a></span>
+                <span class="text-muted">Site by Roots Agency | <a href="../en/legal.html" class="text-muted">Legal mentions</a></span>
             </div>
 """
 
@@ -163,8 +163,8 @@ def create_html(lang, title, desc, url_path, content, og_title):
             <div class="nav-right">
                 <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">{'Prendre rendez-vous' if lang == 'fr' else 'Book Appt'}</a>
                 <div class="lang-switch d-none d-md-flex">
-                    <a href="/fr{url_path.replace('/en/','/')}" class="{ 'active' if lang == 'fr' else '' }">FR</a>
-                    <a href="/en{url_path.replace('/fr/','/')}" class="{ 'active' if lang == 'en' else '' }">EN</a>
+                    <a href="../fr{url_path.replace('/en/','/')}" class="{ 'active' if lang == 'fr' else '' }">FR</a>
+                    <a href="../en{url_path.replace('/fr/','/')}" class="{ 'active' if lang == 'en' else '' }">EN</a>
                 </div>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
@@ -177,8 +177,8 @@ def create_html(lang, title, desc, url_path, content, og_title):
     <div class="mobile-menu">
         {mobile_nav}
         <div class="lang-switch">
-                    <a href="/fr{url_path.replace('/en/','/')}" class="{ 'active' if lang == 'fr' else '' }">FR</a> | 
-                    <a href="/en{url_path.replace('/fr/','/')}" class="{ 'active' if lang == 'en' else '' }">EN</a>
+                    <a href="../fr{url_path.replace('/en/','/')}" class="{ 'active' if lang == 'fr' else '' }">FR</a> | 
+                    <a href="../en{url_path.replace('/fr/','/')}" class="{ 'active' if lang == 'en' else '' }">EN</a>
         </div>
         <div class="mt-4">
             <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">{'Prendre Rendez-vous' if lang == 'fr' else 'Book Appointment'}</a>
@@ -299,21 +299,21 @@ pages_fr = [
                         <h3 style="margin-bottom:1rem;">Bilan Cutané Complet</h3>
                         <p style="flex-grow:1;">Examen de l'ensemble de vos lésions au dermatoscope Heine DeltaOne. Votre chirurgien analyse chaque naevus selon la règle ABCDE et détermine ceux nécessitant une surveillance rapprochée ou une ablation.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Durée : 20–30 min</p>
-                        <a href="/fr/services.html#bilan" class="btn-ghost">En savoir plus</a>
+                        <a href="../fr/services.html#bilan" class="btn-ghost">En savoir plus</a>
                     </div>
                     <div class="card card-gold fade-up" style="display:flex; flex-direction:column; transition-delay:0.1s;">
                         <span class="badge" style="align-self:flex-start; background:var(--churchill-gold); color:#1a2b42;">Acte médical • Remboursé mutuelle</span>
                         <h3 style="margin-bottom:1rem;">Ablation de Naevus Suspect</h3>
                         <p style="flex-grow:1;">Exérèse chirurgicale sous anesthésie locale d'un naevus atypique ou suspect, suivie d'une analyse anatomopathologique en laboratoire. Dans la majorité des cas, l'ablation est réalisée lors de la même consultation que le diagnostic.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Durée : 30–45 min</p>
-                        <a href="/fr/services.html#medical" class="btn-gold">En savoir plus</a>
+                        <a href="../fr/services.html#medical" class="btn-gold">En savoir plus</a>
                     </div>
                     <div class="card fade-up" style="display:flex; flex-direction:column; transition-delay:0.2s;">
                         <span class="badge" style="align-self:flex-start;">Confort & Esthétique</span>
                         <h3 style="margin-bottom:1rem;">Ablation Cosmétique</h3>
                         <p style="flex-grow:1;">Retrait de grains de beauté bénins pour des raisons esthétiques ou de confort (gêne vestimentaire, irritation). Réalisé par un chirurgien plasticien pour un résultat cicatriciel optimal.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Durée : 20–40 min</p>
-                        <a href="/fr/services.html#cosmetique" class="btn-ghost">En savoir plus</a>
+                        <a href="../fr/services.html#cosmetique" class="btn-ghost">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -329,7 +329,7 @@ pages_fr = [
                         Le dermatoscope Heine DeltaOne est l'outil de référence utilisé par les spécialistes les plus exigeants au monde. Son optique haute résolution et son éclairage LED polarisé permettent de visualiser les structures cutanées profondes, invisibles à l'œil nu. C'est grâce à cet équipement que nos chirurgiens peuvent poser un diagnostic précis et éviter les ablations inutiles.
                     </p>
                     <a href="https://www.heine.com/" target="_blank" rel="noopener" class="text-gold" style="font-size:0.9rem; text-decoration:underline; display:inline-block; margin-bottom:2rem;">En savoir plus sur cet équipement</a><br>
-                    <a href="/fr/technologie.html" class="btn-ghost">Notre technologie en détail</a>
+                    <a href="../fr/technologie.html" class="btn-ghost">Notre technologie en détail</a>
                 </div>
                 <div class="fade-up">
                     <div class="card" style="padding:1rem;">
@@ -377,7 +377,7 @@ pages_fr = [
                     </div>
                 </div>
                 <div class="text-center mt-5" style="margin-top:3rem;">
-                    <a href="/fr/equipe.html" class="btn-ghost">Rencontrer l'équipe complete</a>
+                    <a href="../fr/equipe.html" class="btn-ghost">Rencontrer l'équipe complete</a>
                 </div>
             </div>
         </section>
@@ -410,7 +410,7 @@ pages_fr = [
                     <h3 style="margin-bottom:1rem;">Information Remboursement</h3>
                     <p style="margin-bottom:1rem;">L'exérèse médicale d'un naevus suspect est <strong>partiellement remboursée</strong> par votre mutualité belge. L'ablation cosmétique n'est pas remboursée.</p>
                     <p style="margin-bottom:2rem;">Votre chirurgien vous orientera dès la consultation. Munissez-vous de votre carte d'identité et vignette mutualité.</p>
-                    <a href="/fr/tarifs.html" class="btn-ghost">Voir les tarifs détaillés</a>
+                    <a href="../fr/tarifs.html" class="btn-ghost">Voir les tarifs détaillés</a>
                 </div>
             </div>
         </section>
@@ -432,7 +432,7 @@ pages_fr = [
                     <div class="faq-answer">Prévoyez 20 à 45 minutes selon le cas (simple examen dermatoscopique ou avec ablation consécutive).</div>
                 </div>
                 <div class="text-center" style="margin-top:3rem;">
-                    <a href="/fr/faq.html" class="btn-ghost">Toutes les questions fréquentes</a>
+                    <a href="../fr/faq.html" class="btn-ghost">Toutes les questions fréquentes</a>
                 </div>
             </div>
         </section>
@@ -514,7 +514,7 @@ pages_fr = [
                         <li><strong>Durée :</strong> 20–40 min selon nombre et localisation</li>
                         <li><strong>Remboursement :</strong> Non remboursé (acte cosmétique).</li>
                     </ul>
-                    <a href="/fr/tarifs.html" class="btn-ghost">Voir les tarifs</a>
+                    <a href="../fr/tarifs.html" class="btn-ghost">Voir les tarifs</a>
                 </div>
             </div>
         </section>
@@ -913,7 +913,7 @@ pages_fr = [
                             </div>
                             <div style="margin-bottom: 1.5rem; display:flex; align-items:flex-start; gap:0.75rem;">
                                 <input type="checkbox" id="rgpd" name="rgpd" required style="width:20px; flex-shrink:0; margin-top:0.2rem;">
-                                <label for="rgpd" style="font-size:0.85rem; font-weight:400; color:var(--text-secondary);">J'accepte que mes données soient traitées selon la <a href="/fr/mentions-legales.html" style="text-decoration:underline;">Politique de Confidentialité</a> afin d'obtenir un suivi sur ma requête de santé de la part du cabinet officiel Churchill SkinCheck.</label>
+                                <label for="rgpd" style="font-size:0.85rem; font-weight:400; color:var(--text-secondary);">J'accepte que mes données soient traitées selon la <a href="../fr/mentions-legales.html" style="text-decoration:underline;">Politique de Confidentialité</a> afin d'obtenir un suivi sur ma requête de santé de la part du cabinet officiel Churchill SkinCheck.</label>
                             </div>
                             
                             <button type="submit" class="btn-gold w-100" style="width:100%;">Envoyer la demande</button>
@@ -1042,7 +1042,7 @@ pages_fr = [
                     <iconify-icon icon="lucide:check-circle" width="60" class="text-gold" style="margin-bottom:1.5rem;"></iconify-icon>
                     <h1 class="text-navy" style="font-size:2rem; margin-bottom:1rem;">Merci !</h1>
                     <p style="font-size:1.1rem; margin-bottom: 2.5rem;">L'envoi a parfaitement opéré.<br>Notre secrétariat prend connaissance de vos informations et reviendra très promptement vers vous !</p>
-                    <a href="/fr/index.html" class="btn-ghost">Retourner à l'accueil</a>
+                    <a href="../fr/index.html" class="btn-ghost">Retourner à l'accueil</a>
                 </div>
             </div>
         </section>

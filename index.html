@@ -8,13 +8,13 @@
     // Automagical redirect based on browser language
     var lang = navigator.language || navigator.userLanguage;
     if (lang.indexOf('fr') > -1) {
-      window.location.replace('/fr/');
+      window.location.replace('fr/index.html');
     } else {
-      window.location.replace('/en/');
+      window.location.replace('en/index.html');
     }
   </script>
 </head>
 <body>
-  <p>Redirecting to <a href="/fr/">FR</a> or <a href="/en/">EN</a>...</p>
+  <p>Redirecting to <a href="fr/index.html">FR</a> or <a href="en/index.html">EN</a>...</p>
 </body>
 </html>
