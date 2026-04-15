@@ -454,7 +454,8 @@ pages_fr = [
         "desc": "Bilan cutané, ablation médicale et cosmétique de grains de beauté à Bruxelles. Par chirurgiens plasticiens à la Clinique Churchill. Remboursé si indication médicale.",
         "og_title": "Nos Services | Churchill SkinCheck Bruxelles",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Nos Services de Dermato-Chirurgie</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem;">De l'examen dermatoscopique à l'ablation chirurgicale — en une seule consultation.</p>
@@ -573,7 +574,8 @@ pages_fr = [
         "desc": "Churchill SkinCheck réunit une équipe de chirurgiens plasticiens certifiés spécialisés en dermato-chirurgie à Bruxelles, Clinique Churchill.",
         "og_title": "Notre Équipe | Churchill SkinCheck",
         "content": '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Notre Équipe de Chirurgiens Plasticiens</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem; max-width:800px; margin-left:auto; margin-right:auto;">
@@ -647,7 +649,8 @@ pages_fr = [
         "desc": "Churchill SkinCheck utilise le dermatoscope Heine DeltaOne pour un diagnostic dermoscopique précis à Bruxelles. Technologie de référence mondiale en analyse des lésions cutanées.",
         "og_title": "Heine DeltaOne | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Heine DeltaOne — Notre Outil de Diagnostic</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem; max-width:800px; margin: 1rem auto 0;">
@@ -708,7 +711,8 @@ pages_fr = [
         "desc": "Tarifs transparents pour le bilan cutané et l'ablation de lésions chez Churchill SkinCheck, Bruxelles. Remboursement mutualité belge pour ablations médicalement indiquées.",
         "og_title": "Tarifs & Remboursements | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Tarifs & Remboursements</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem;">Transparence totale sur nos tarifs. Certaines prestations sont partiellement remboursées par votre mutualité belge.</p>
@@ -793,7 +797,8 @@ pages_fr = [
         "desc": "Toutes les réponses à vos questions sur le bilan cutané et l'ablation de grains de beauté à Bruxelles chez Churchill SkinCheck.",
         "og_title": "FAQ | Churchill SkinCheck",
         "content": '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Foire Aux Questions</h1>
             </div>
@@ -879,7 +884,8 @@ pages_fr = [
         "desc": "Prenez rendez-vous à Churchill SkinCheck, Clinique Churchill, Uccle Bruxelles. Consultation dermato-chirurgie par chirurgiens plasticiens.",
         "og_title": "Contact | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Contactez-nous</h1>
                 <p style="margin-top:2rem;"><a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Réserver ma consultation maintenant</a></p>
@@ -959,7 +965,8 @@ pages_fr = [
         "desc": "Conseils santé cutanée et actualités dermato-chirurgie par l'équipe Churchill SkinCheck Bruxelles.",
         "og_title": "Blog | Churchill SkinCheck",
         "content": '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Conseils et Actualités</h1>
             </div>
@@ -998,7 +1005,8 @@ pages_fr = [
         "desc": "Mentions légales, politique de confidentialité de données de santé clinique, RGPD et cookies de Churchill SkinCheck Bruxelles.",
         "og_title": "Mentions Légales | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Mentions Légales & Confidentialité RGPD</h1>
             </div>
@@ -1295,7 +1303,8 @@ pages_en = [
         "desc": "Skin check-ups, medical and cosmetic mole removals in Brussels. By plastic surgeons at Clinique Churchill. Mutual insurance coverage if medically flagged.",
         "og_title": "Our Services | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Our Dermato-Surgery Offerings</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem;">From dermatoscopic examination bridging across surgical removals sequentially — efficiently condensed spanning a single appointment.</p>
@@ -1414,7 +1423,8 @@ pages_en = [
         "desc": "Churchill SkinCheck unites certified plastic surgeons specializing in dermato-surgery at the Churchill Clinic, Brussels.",
         "og_title": "Our Team | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Acclaimed Surgeon Rosters</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem; max-width:800px; margin-left:auto; margin-right:auto;">
@@ -1488,7 +1498,8 @@ pages_en = [
         "desc": "Churchill SkinCheck uses the Heine DeltaOne dermatoscope for precise dermoscopic diagnosis in Brussels. World reference technology in skin lesion analysis.",
         "og_title": "Heine DeltaOne | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Heine DeltaOne — Ultimate Diagnostics Gear</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem; max-width:800px; margin: 1rem auto 0;">
@@ -1549,7 +1560,8 @@ pages_en = [
         "desc": "Clear pricing scale regarding mole checks plus localized excision. Belgian reciprocal mutual health cover applies toward medical indications.",
         "og_title": "Pricing & Refunds | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Pricing & Mutual Refunds</h1>
                 <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem;">Fully transparent fee mapping structures visually declared openly securing varying parameters offset partially mapping mutual system rules.</p>
@@ -1634,7 +1646,8 @@ pages_en = [
         "desc": "Answers relating toward dermatoscopy details plus general excision questions in Brussels.",
         "og_title": "FAQ | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Frequently Unpackable Answers</h1>
             </div>
@@ -1720,7 +1733,8 @@ pages_en = [
         "desc": "Confirm schedule actions effortlessly with Clinique Churchill plastic surgery arrays optimally.",
         "og_title": "Contact | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Find us locally in Brussels</h1>
                 <p style="margin-top:2rem;"><a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Launch clinical scheduling</a></p>
@@ -1800,7 +1814,8 @@ pages_en = [
         "desc": "Internal knowledge bases publishing clinical awareness correctly efficiently.",
         "og_title": "Updates | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Updates & Articles Grid</h1>
             </div>
@@ -1838,7 +1853,8 @@ pages_en = [
         "desc": "Privacy policy frames mapping exact GDPR handling securely natively perfectly naturally appropriately exactly seamlessly reliably strictly.",
         "og_title": "Legal | Churchill SkinCheck",
         "content" : '''
-        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="bg-hero-deco"></div>
             <div class="container fade-up">
                 <h1 class="text-navy">Privacy Tracks & Deep Legal Logistics</h1>
             </div>
