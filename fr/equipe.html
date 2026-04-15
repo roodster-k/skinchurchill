@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>L'Équipe - Churchill SkinCheck</title>
-    <meta name="description" content="Rencontrez nos chirurgiens plasticiens spécialisés dans le diagnostic et l'exérèse.">
+    <title>Notre Équipe | Churchill SkinCheck Bruxelles</title>
+    <meta name="description" content="Churchill SkinCheck réunit une équipe de chirurgiens plasticiens certifiés spécialisés en dermato-chirurgie à Bruxelles, Clinique Churchill.">
     <!-- Open Graph -->
-    <meta property="og:title" content="Équipe - Churchill SkinCheck">
-    <meta property="og:description" content="Rencontrez nos chirurgiens plasticiens spécialisés dans le diagnostic et l'exérèse.">
+    <meta property="og:title" content="Notre Équipe | Churchill SkinCheck">
+    <meta property="og:description" content="Churchill SkinCheck réunit une équipe de chirurgiens plasticiens certifiés spécialisés en dermato-chirurgie à Bruxelles, Clinique Churchill.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/equipe.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/fr/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/fr/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/fr/technologie.html">Technologie</a>
                 <a href="/fr/tarifs.html">Tarifs</a>
                 <a href="/fr/faq.html">FAQ</a>
+                <a href="/fr/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/equipe.html" class="active">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/equipe.html" class="active">FR</a>
                     <a href="/en/equipe.html" class="">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">RDV Rapide</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,42 +91,76 @@
             <a href="/fr/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Prendre Rendez-vous</a>
+        <div class="lang-switch">
+                    <a href="/fr/equipe.html" class="active">FR</a> | 
+                    <a href="/en/equipe.html" class="">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Prendre Rendez-vous</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
-            <div class="container fade-up"><h1>Notre Équipe Médicale</h1></div>
-        </section>
-        <section>
-            <div class="container fade-up soft-grid">
-                <!-- REMPLACER : Photos et infos praticiens -->
-                <div class="card text-center">
-                    <img src="https://placehold.co/400x400" alt="Dr X" style="border-radius: 50%; margin: 0 auto 1.5rem;">
-                    <h3>Dr. [NOM 1]</h3>
-                    <p class="badge">Chirurgien Plasticien</p>
-                    <p>INAMI : [INAMI 1]</p>
-                </div>
-                <div class="card text-center">
-                    <img src="https://placehold.co/400x400" alt="Dr Y" style="border-radius: 50%; margin: 0 auto 1.5rem;">
-                    <h3>Dr. [NOM 2]</h3>
-                    <p class="badge">Chirurgien Plasticien</p>
-                    <p>INAMI : [INAMI 2]</p>
-                </div>
-                <div class="card text-center">
-                    <img src="https://placehold.co/400x400" alt="Dr Z" style="border-radius: 50%; margin: 0 auto 1.5rem;">
-                    <h3>Dr. [NOM 3]</h3>
-                    <p class="badge">Chirurgien Plasticien</p>
-                    <p>INAMI : [INAMI 3]</p>
-                </div>
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="container fade-up">
+                <h1 class="text-navy">Notre Équipe de Chirurgiens Plasticiens</h1>
+                <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem; max-width:800px; margin-left:auto; margin-right:auto;">
+                    Churchill SkinCheck s'appuie sur des chirurgiens plasticiens certifiés, tous membres de la Société Royale Belge de Chirurgie Plastique. Leur double expertise — chirurgie plastique reconstructrice et dermato-chirurgie — garantit un diagnostic rigoureux et un résultat esthétique optimal.
+                </p>
             </div>
         </section>
         
-        
-        <!-- CTA Section -->
+        <section class="section-alt">
+            <div class="container">
+                <div class="layout-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+                    <div class="card fade-up">
+                        <img src="https://placehold.co/400x400" alt="Dr X" style="border-radius:1rem; margin-bottom:1.5rem; width:100%; aspect-ratio:1; object-fit:cover;">
+                        <h2>Dr. [Prénom] [Nom] <!-- REMPLACER --></h2>
+                        <ul style="border-top:1px solid var(--border-light); border-bottom:1px solid var(--border-light); padding:1rem 0; margin:1rem 0; font-size:0.9rem;">
+                            <li><strong>Spécialité :</strong> Dermato-chirurgie & Reconstruction cutanée</li>
+                            <li><strong>INAMI :</strong> [INAMI 1] <!-- REMPLACER --></li>
+                        </ul>
+                        <p style="margin-bottom:1.5rem;">Chirurgien plasticien certifié, spécialisé en dermato-chirurgie et reconstruction cutanée. Exerce à la Clinique Churchill depuis [année]. Membre de la Société Royale Belge de Chirurgie Plastique. Formation complémentaire en oncologie cutanée.</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+                            <span class="badge">Ablation naevus</span>
+                            <span class="badge">Chirurgie cutanée</span>
+                            <span class="badge">Cicatrisation esthétique</span>
+                        </div>
+                    </div>
+
+                    <div class="card fade-up" style="transition-delay:0.1s;">
+                        <img src="https://placehold.co/400x400" alt="Dr Y" style="border-radius:1rem; margin-bottom:1.5rem; width:100%; aspect-ratio:1; object-fit:cover;">
+                        <h2>Dr. [Prénom] [Nom] <!-- REMPLACER --></h2>
+                        <ul style="border-top:1px solid var(--border-light); border-bottom:1px solid var(--border-light); padding:1rem 0; margin:1rem 0; font-size:0.9rem;">
+                            <li><strong>Spécialité :</strong> Chirurgie des lésions pigmentées</li>
+                            <li><strong>INAMI :</strong> [INAMI 2] <!-- REMPLACER --></li>
+                        </ul>
+                        <p style="margin-bottom:1.5rem;">Chirurgien plasticien avec une expertise particulière dans la prise en charge des lésions cutanées pigmentées et des tumeurs de la peau. Formé en Belgique et à l'étranger, il intervient à Churchill SkinCheck pour les cas complexes et les lésions à fort enjeu esthétique.</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+                            <span class="badge">Naevus complexes</span>
+                            <span class="badge">Tumeurs cutanées</span>
+                            <span class="badge">Chirurgie reconstructrice</span>
+                        </div>
+                    </div>
+
+                    <div class="card fade-up" style="transition-delay:0.2s;">
+                        <img src="https://placehold.co/400x400" alt="Dr Z" style="border-radius:1rem; margin-bottom:1.5rem; width:100%; aspect-ratio:1; object-fit:cover;">
+                        <h2>Dr. [Prénom] [Nom] <!-- REMPLACER --></h2>
+                        <ul style="border-top:1px solid var(--border-light); border-bottom:1px solid var(--border-light); padding:1rem 0; margin:1rem 0; font-size:0.9rem;">
+                            <li><strong>Spécialité :</strong> Dermato-chirurgie esthétique & reconstructrice</li>
+                            <li><strong>INAMI :</strong> [INAMI 3] <!-- REMPLACER --></li>
+                        </ul>
+                        <p style="margin-bottom:1.5rem;">Spécialisé en dermato-chirurgie esthétique et reconstructrice, formé à l'ULB. Membre actif de sociétés scientifiques belges et européennes de chirurgie plastique. Intervient régulièrement pour des ablations cosmétiques et médicales à la Clinique Churchill.</p>
+                        <div style="display:flex; flex-wrap:wrap; gap:0.5rem;">
+                            <span class="badge">Ablation cosmétique</span>
+                            <span class="badge">Chirurgie plastique</span>
+                            <span class="badge">Médecine esthétique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section-navy text-center">
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
@@ -129,6 +168,7 @@
                 <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
             </div>
         </section>
+        
     </main>
 
     <!-- Footer -->
@@ -136,32 +176,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise en dermato-chirurgie et diagnostic rapide. Encadré par la Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/fr/services.html">Lésions suspectes</a></li>
-                        <li><a href="/fr/technologie.html">Le Dermatoscope</a></li>
-                        <li><a href="/fr/tarifs.html">Honoraires & Remboursement</a></li>
+                        <li><a href="/fr/services.html#bilan">Bilan cutané complet</a></li>
+                        <li><a href="/fr/services.html#medical">Ablation médicale suspecte</a></li>
+                        <li><a href="/fr/services.html#cosmetique">Ablation cosmétique bénigne</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Bruxelles</li>
+                        <li>Avenue Winston Churchill, Uccle, Bruxelles <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. Tous droits réservés. | <a href="/fr/mentions-legales.html">Mentions légales</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Bruxelles</span>
+                <span class="text-muted">Site réalisé par Roots Agency | <a href="/fr/mentions-legales.html" class="text-muted">Mentions légales</a></span>
             </div>
 
         </div>

@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js';
+import { SUPABASE_URL } from './config.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
@@ -25,8 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       try {
         // Send email via EmailJS... or similar logic via Supabase API
-        // For demonstration to meet prompt completeness
-        console.log('Sending data:', data, 'using', CONFIG.SUPABASE.URL);
+        console.log('Sending data:', data, 'using', SUPABASE_URL);
         
         // Simulate network request
         setTimeout(() => {

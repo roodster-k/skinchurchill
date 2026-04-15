@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical News - Churchill SkinCheck</title>
-    <meta name="description" content="Follow medical news and announcements from Churchill SkinCheck.">
+    <title>Medical Logic Logs | Churchill SkinCheck</title>
+    <meta name="description" content="Internal knowledge bases publishing clinical awareness correctly efficiently.">
     <!-- Open Graph -->
-    <meta property="og:title" content="Blog - Churchill SkinCheck">
-    <meta property="og:description" content="Follow medical news and announcements from Churchill SkinCheck.">
+    <meta property="og:title" content="Updates | Churchill SkinCheck">
+    <meta property="og:description" content="Internal knowledge bases publishing clinical awareness correctly efficiently.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/blog.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/en/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/en/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/en/technology.html">Technology</a>
                 <a href="/en/pricing.html">Pricing</a>
                 <a href="/en/faq.html">FAQ</a>
+                <a href="/en/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/blog.html" class="">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Book Appt</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/blog.html" class="">FR</a>
                     <a href="/en/blog.html" class="active">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">Quick Appt</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,31 +91,48 @@
             <a href="/en/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Book Appointment</a>
+        <div class="lang-switch">
+                    <a href="/fr/blog.html" class="">FR</a> | 
+                    <a href="/en/blog.html" class="active">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Book Appointment</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
-            <div class="container fade-up"><h1>News & Updates</h1></div>
-        </section>
-        <section>
-            <div class="container fade-up text-center">
-                <p>No articles published yet. Check back soon!</p>
-            </div>
-        </section>
-        
-        
-        <!-- CTA Section -->
-        <section class="section-navy text-center">
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
             <div class="container fade-up">
-                <h2 style="margin-bottom: 1rem;">Do not wait to check a suspicious lesion</h2>
-                <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Our emergency slots allow you to be reassured or treated without delay.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Check availabilities</a>
+                <h1 class="text-navy">Updates & Articles Grid</h1>
             </div>
         </section>
+
+        <section class="section-alt">
+            <div class="container layout-grid">
+                <!-- Placeholder Article 1 -->
+                <div class="card fade-up">
+                    <img src="https://placehold.co/800x400" alt="Dermoscopie detail" style="border-radius:1rem; margin-bottom:1.5rem;">
+                    <span class="badge">Prevention Phase Base</span>
+                    <h3 style="margin-top:0.5rem; margin-bottom:1rem;">Mastering ABCDE mole reading mapping logic arrays structurally functionally.</h3>
+                    <p class="text-muted" style="font-size:0.85rem; margin-bottom:1rem;">Launched February 12, 2026</p>
+                    <p style="margin-bottom:1.5rem;">Review precise anomalous mapping filters rendering proactive patient safety levels exponentially optimally securely accurately appropriately completely practically intuitively effectively consistently universally reliably...</p>
+                    <a href="#" class="text-gold" style="font-weight:500;">Commit view jump &rarr;</a>
+                </div>
+                
+                <!-- Placeholder Article 2 -->
+                <div class="card fade-up" style="transition-delay:0.1s;">
+                    <img src="https://placehold.co/800x400" alt="Chirurgie concept" style="border-radius:1rem; margin-bottom:1.5rem;">
+                    <span class="badge">Clinics Insights Tracks</span>
+                    <h3 style="margin-top:0.5rem; margin-bottom:1rem;">Translating plastic surgery differences extracting moles reliably securely effectively perfectly efficiently.</h3>
+                    <p class="text-muted" style="font-size:0.85rem; margin-bottom:1rem;">Pushed Jan 08, 2026</p>
+                    <p style="margin-bottom:1.5rem;">Many query surgical advantage differentials targeting standard dermatologist tracks practically fundamentally realistically completely systematically organically optimally actively logically practically naturally logically...</p>
+                    <a href="#" class="text-gold" style="font-weight:500;">Navigate block path &rarr;</a>
+                </div>
+                
+            </div>
+        </section>
+        
     </main>
 
     <!-- Footer -->
@@ -118,32 +140,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise in dermato-surgery and quick diagnosis. Embedded in Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/en/services.html">Suspect Lesions</a></li>
-                        <li><a href="/en/technology.html">Dermatoscope</a></li>
-                        <li><a href="/en/pricing.html">Fees & Reimbursement</a></li>
+                        <li><a href="/en/services.html#bilan">Comprehensive mole check</a></li>
+                        <li><a href="/en/services.html#medical">Medical lesion removal</a></li>
+                        <li><a href="/en/services.html#cosmetique">Cosmetic mole removal</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Brussels</li>
+                        <li>Avenue Winston Churchill, Uccle, Brussels <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. All rights reserved. | <a href="/en/legal.html">Legal Mentions</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Brussels</span>
+                <span class="text-muted">Site by Roots Agency | <a href="/en/legal.html" class="text-muted">Legal mentions</a></span>
             </div>
 
         </div>

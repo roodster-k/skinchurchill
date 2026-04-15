@@ -1,50 +1,55 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Intersection Observer for fade-up animations
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.1
-  };
-  
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+  // Intersection Observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
       }
     });
-  }, observerOptions);
+  }, { threshold: 0.12 });
   
-  document.querySelectorAll('.fade-up').forEach(el => {
-    observer.observe(el);
-  });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-  // 2. Burger Menu Toggle
+  // Mobile menu logic
   const burgerBtn = document.querySelector('.burger-btn');
   const mobileMenu = document.querySelector('.mobile-menu');
   
   if (burgerBtn && mobileMenu) {
-    burgerBtn.addEventListener('click', () => {
+    const overlay = document.createElement('div');
+    overlay.className = 'mobile-overlay';
+    document.body.appendChild(overlay);
+
+    const toggleMenu = () => {
+      burgerBtn.classList.toggle('active');
       mobileMenu.classList.toggle('active');
-    });
+      overlay.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+    };
+
+    burgerBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
   }
 
-  // 3. FAQ Accordion
+  // FAQ Accordion
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(item => {
     const question = item.querySelector('.faq-question');
     if (question) {
       question.addEventListener('click', () => {
-        item.classList.toggle('active');
+        const isActive = item.classList.contains('active');
         
-        // Change icon rotation or state here if needed
-        const icon = question.querySelector('.iconify');
-        if (icon) {
-          if (item.classList.contains('active')) {
-            icon.style.transform = 'rotate(180deg)';
-          } else {
-            icon.style.transform = 'rotate(0deg)';
-          }
+        // Close others
+        faqItems.forEach(faq => {
+            faq.classList.remove('active');
+            const icon = faq.querySelector('iconify-icon');
+            if(icon) icon.style.transform = 'rotate(0deg)';
+        });
+        
+        if(!isActive) {
+            item.classList.add('active');
+            const icon = question.querySelector('iconify-icon');
+            if(icon) icon.style.transform = 'rotate(180deg)';
         }
       });
     }

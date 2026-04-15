@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technologie Heine DeltaOne - Churchill SkinCheck</title>
-    <meta name="description" content="L’excellence diagnostique grâce à la technologie Heine DeltaOne.">
+    <title>Dermatoscope Heine DeltaOne | Churchill SkinCheck</title>
+    <meta name="description" content="Churchill SkinCheck utilise le dermatoscope Heine DeltaOne pour un diagnostic dermoscopique précis à Bruxelles. Technologie de référence mondiale en analyse des lésions cutanées.">
     <!-- Open Graph -->
-    <meta property="og:title" content="Heine DeltaOne - Churchill SkinCheck">
-    <meta property="og:description" content="L’excellence diagnostique grâce à la technologie Heine DeltaOne.">
+    <meta property="og:title" content="Heine DeltaOne | Churchill SkinCheck">
+    <meta property="og:description" content="Churchill SkinCheck utilise le dermatoscope Heine DeltaOne pour un diagnostic dermoscopique précis à Bruxelles. Technologie de référence mondiale en analyse des lésions cutanées.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/technologie.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/fr/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/fr/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/fr/technologie.html">Technologie</a>
                 <a href="/fr/tarifs.html">Tarifs</a>
                 <a href="/fr/faq.html">FAQ</a>
+                <a href="/fr/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/technologie.html" class="active">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/technologie.html" class="active">FR</a>
                     <a href="/en/technologie.html" class="">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">RDV Rapide</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,31 +91,63 @@
             <a href="/fr/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Prendre Rendez-vous</a>
+        <div class="lang-switch">
+                    <a href="/fr/technologie.html" class="active">FR</a> | 
+                    <a href="/en/technologie.html" class="">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Prendre Rendez-vous</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
-            <div class="container fade-up"><h1>Le Dermatoscope Heine DeltaOne</h1></div>
-        </section>
-        <section>
-            <div class="container fade-up soft-grid">
-                <div>
-                    <!-- REMPLACER : Photo Heine DeltaOne -->
-                    <img src="https://placehold.co/500x500" alt="Dermatoscope Heine DeltaOne" style="border-radius: var(--border-radius-md);">
-                </div>
-                <div>
-                    <h2>Une précision optique médicale</h2>
-                    <p>Cet outil de diagnostic cutané offre une illumination LED HQ assurant un rendu des couleurs optimal.</p>
-                </div>
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="container fade-up">
+                <h1 class="text-navy">Heine DeltaOne — Notre Outil de Diagnostic</h1>
+                <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem; max-width:800px; margin: 1rem auto 0;">
+                    Sans cet outil, de nombreuses lésions atypiques passent inaperçues à l'examen visuel. La dermoscopie est clé dans notre pratique pour poser les bons diagnostics.
+                </p>
             </div>
         </section>
         
-        
-        <!-- CTA Section -->
+        <section class="section-alt">
+            <div class="container layout-grid">
+                <div class="fade-up card" style="padding:1.5rem; text-align:center;">
+                    <!-- REMPLACER : photo Heine DeltaOne -->
+                    <img src="https://placehold.co/600x600?text=Heine+DeltaOne" alt="Dermatoscope Heine DeltaOne" style="border-radius:1rem;">
+                </div>
+                <div class="fade-up">
+                    <h2 class="text-navy" style="margin-bottom:1.5rem;">Fonctionnalités avancées</h2>
+                    <ul style="border-left:2px solid var(--border-light); padding-left:1.5rem; margin-bottom:2rem;">
+                        <li style="margin-bottom:1.5rem;">
+                            <strong style="color:var(--text-primary);">1. Optique haute résolution</strong><br>
+                            Visualisation des structures melanocytaires profondes.
+                        </li>
+                        <li style="margin-bottom:1.5rem;">
+                            <strong style="color:var(--text-primary);">2. Éclairage LED polarisé</strong><br>
+                            Élimination des reflets, analyse en profondeur sans contact.
+                        </li>
+                        <li style="margin-bottom:1.5rem;">
+                            <strong style="color:var(--text-primary);">3. Ergonomie clinique</strong><br>
+                            Confort accru du patient, et grande précision pour le praticien.
+                        </li>
+                        <li>
+                            <strong style="color:var(--text-primary);">4. Documentation numérique possible</strong><br>
+                            Idéal pour la traçabilité, le suivi et la comparaison d'évolution dans le temps.
+                        </li>
+                    </ul>
+                    <a href="https://www.heine.com/fr/produits/dermatoscopes-et-documentation-numerique/dermatoscopes/detail/99957-dermatoscope-heine-deltaone" class="btn-ghost" target="_blank" rel="noopener">Fiche technique Heine DeltaOne</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container fade-up text-center" style="max-width:800px;">
+                <h2 class="text-navy" style="margin-bottom:1.5rem;">Pourquoi la dermoscopie change tout</h2>
+                <p>La dermoscopie numérique permet de détecter des signes d'atypie invisibles à l'œil nu — réseaux pigmentaires irréguliers, globules atypiques, voile bleu-blanc — qui peuvent indiquer une transformation maligne précoce. Utilisé par nos chirurgiens, le Heine DeltaOne réduit significativement le nombre d'ablations inutiles et améliore considérablement la précision diagnostique.</p>
+            </div>
+        </section>
         <section class="section-navy text-center">
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
@@ -118,6 +155,7 @@
                 <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
             </div>
         </section>
+        
     </main>
 
     <!-- Footer -->
@@ -125,32 +163,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise en dermato-chirurgie et diagnostic rapide. Encadré par la Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/fr/services.html">Lésions suspectes</a></li>
-                        <li><a href="/fr/technologie.html">Le Dermatoscope</a></li>
-                        <li><a href="/fr/tarifs.html">Honoraires & Remboursement</a></li>
+                        <li><a href="/fr/services.html#bilan">Bilan cutané complet</a></li>
+                        <li><a href="/fr/services.html#medical">Ablation médicale suspecte</a></li>
+                        <li><a href="/fr/services.html#cosmetique">Ablation cosmétique bénigne</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Bruxelles</li>
+                        <li>Avenue Winston Churchill, Uccle, Bruxelles <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. Tous droits réservés. | <a href="/fr/mentions-legales.html">Mentions légales</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Bruxelles</span>
+                <span class="text-muted">Site réalisé par Roots Agency | <a href="/fr/mentions-legales.html" class="text-muted">Mentions légales</a></span>
             </div>
 
         </div>

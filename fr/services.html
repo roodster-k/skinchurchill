@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Services - Churchill SkinCheck</title>
-    <meta name="description" content="Découvrez nos services d'évaluation dermatoscopique et d'ablation de lésions suspectes à la Clinique Churchill.">
+    <title>Nos Services | Churchill SkinCheck Bruxelles</title>
+    <meta name="description" content="Bilan cutané, ablation médicale et cosmétique de grains de beauté à Bruxelles. Par chirurgiens plasticiens à la Clinique Churchill. Remboursé si indication médicale.">
     <!-- Open Graph -->
-    <meta property="og:title" content="Services - Churchill SkinCheck">
-    <meta property="og:description" content="Découvrez nos services d'évaluation dermatoscopique et d'ablation de lésions suspectes à la Clinique Churchill.">
+    <meta property="og:title" content="Nos Services | Churchill SkinCheck Bruxelles">
+    <meta property="og:description" content="Bilan cutané, ablation médicale et cosmétique de grains de beauté à Bruxelles. Par chirurgiens plasticiens à la Clinique Churchill. Remboursé si indication médicale.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/services.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/fr/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/fr/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/fr/technologie.html">Technologie</a>
                 <a href="/fr/tarifs.html">Tarifs</a>
                 <a href="/fr/faq.html">FAQ</a>
+                <a href="/fr/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/services.html" class="active">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/services.html" class="active">FR</a>
                     <a href="/en/services.html" class="">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">RDV Rapide</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,45 +91,129 @@
             <a href="/fr/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Prendre Rendez-vous</a>
+        <div class="lang-switch">
+                    <a href="/fr/services.html" class="active">FR</a> | 
+                    <a href="/en/services.html" class="">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Prendre Rendez-vous</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
             <div class="container fade-up">
-                <h1 class="text-navy" style="margin-bottom: 1rem;">Nos Services</h1>
-                <p class="text-secondary" style="font-size: 1.125rem;">Un diagnostic ultra précis et une prise en charge chirurgicale immédiate.</p>
+                <h1 class="text-navy">Nos Services de Dermato-Chirurgie</h1>
+                <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem;">De l'examen dermatoscopique à l'ablation chirurgicale — en une seule consultation.</p>
             </div>
         </section>
+        
+        <section id="bilan" class="section-alt">
+            <div class="container layout-grid">
+                <div class="fade-up">
+                    <span class="badge">Prévention</span>
+                    <h2 class="text-navy" style="margin-bottom:1.5rem;">Bilan Cutané Complet</h2>
+                    <p style="margin-bottom:1rem;">Notre chirurgien examine l'ensemble de vos lésions cutanées à l'aide du dermatoscope Heine DeltaOne. Chaque naevus est analysé selon la règle ABCDE : Asymétrie, Bords, Couleur, Diamètre, Évolution.</p>
+                    <p style="margin-bottom:1rem;">Ce bilan permet d'identifier les lésions nécessitant une ablation, celles nécessitant une surveillance régulière, et celles parfaitement bénignes. Contrairement à un bilan chez un dermatologue classique, votre praticien peut — si une ablation est indiquée — la réaliser immédiatement lors de la même consultation.</p>
+                    <ul style="margin-bottom:2rem; padding-left:1.5rem; list-style:disc; font-weight:500;">
+                        <li><strong>Indications :</strong> Contrôle annuel, antécédents de mélanome, peau claire, etc.</li>
+                        <li><strong>Durée :</strong> 20–30 min</li>
+                        <li><strong>Remboursement :</strong> Consultation médicale standard</li>
+                    </ul>
+                    <a href="[LIEN_RDV]" class="btn-ghost">Prendre rendez-vous</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="medical">
+            <div class="container layout-grid">
+                <div class="fade-up card card-gold" style="padding:3rem;">
+                    <span class="badge" style="background:#C9A96E; color:#fff; border-color:#C9A96E;">Partiellement remboursé — Mutualité belge</span>
+                    <h2 class="text-navy" style="margin-bottom:1.5rem;">Ablation de Naevus Suspect</h2>
+                    <p style="margin-bottom:1rem;">Lorsqu'une lésion est identifiée comme suspecte ou atypique, notre chirurgien plasticien réalise une exérèse chirurgicale sous anesthésie locale. L'intervention consiste à retirer la lésion avec une marge de sécurité adaptée, puis à suturer la peau avec un soin esthétique maximal : respect des lignes de moindre tension, fils superficiels ultra-fins, repositionnement de la cicatrice dans les plis naturels quand c'est possible.</p>
+                    <p style="margin-bottom:1.5rem;">La lésion est systématiquement envoyée en analyse anatomopathologique dans un laboratoire spécialisé. Les résultats vous sont communiqués sous 10 à 15 jours ouvrables.</p>
+                    
+                    <ul style="margin-bottom:2rem; font-weight:500;">
+                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Anesthésie locale — intervention non douloureuse</li>
+                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Ablation et consultation possibles lors de la même visite</li>
+                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Analyse anatomopathologique systématique</li>
+                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Résultats communiqués sous 10-15 jours</li>
+                    </ul>
+                    
+                    <div style="background:var(--bg-secondary); padding:1rem; border-radius:0.5rem; font-size:0.9rem; margin-bottom:2rem;">
+                        <p style="margin-bottom:0.5rem;"><strong>Durée :</strong> 30–45 min (consultation comprise)</p>
+                        <p><strong>Remboursement :</strong> Partiellement remboursé si indication médicale confirmée. Apportez carte d'identité + vignette.</p>
+                    </div>
+                    
+                    <a href="[LIEN_RDV]" class="btn-gold">Prendre rendez-vous</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="cosmetique" class="section-alt">
+            <div class="container layout-grid">
+                <div class="fade-up">
+                    <span class="badge">Esthétique</span>
+                    <h2 class="text-navy" style="margin-bottom:1.5rem;">Ablation Cosmétique</h2>
+                    <p style="margin-bottom:1rem;">Vous souhaitez faire retirer un grain de beauté bénin pour des raisons esthétiques ou de confort — parce qu'il vous gêne visuellement, s'accroche aux vêtements ou aux bijoux, ou vous irrite ? Nos chirurgiens plasticiens réalisent ce type d'ablation avec la même rigueur chirurgicale que pour une indication médicale.</p>
+                    <p style="margin-bottom:1.5rem;">Le résultat esthétique est leur priorité : chaque incision est pensée pour minimiser la cicatrice visible à long terme. Un naevus bénin est confirmé lors de la consultation préalable. L'ablation peut dans la plupart des cas être réalisée le jour même. La lésion est tout de même envoyée en analyse anatomopathologique pour écarter tout risque résiduel.</p>
+                    <ul style="margin-bottom:2rem; padding-left:1.5rem; list-style:disc; font-weight:500;">
+                        <li><strong>Durée :</strong> 20–40 min selon nombre et localisation</li>
+                        <li><strong>Remboursement :</strong> Non remboursé (acte cosmétique).</li>
+                    </ul>
+                    <a href="/fr/tarifs.html" class="btn-ghost">Voir les tarifs</a>
+                </div>
+            </div>
+        </section>
+
         <section>
             <div class="container fade-up">
-                <div class="soft-grid">
-                    <div class="card">
-                        <h3>Diagnostic Dermatoscopique</h3>
-                        <p>Examen de toute lésion grâce à une optique de très haute résolution.</p>
-                        <a href="[LIEN_RDV]" class="btn-ghost" style="margin-top: 1rem;">Prendre RDV</a>
-                    </div>
-                    <div class="card">
-                        <h3>Ablation par Exérèse Chirurgicale</h3>
-                        <p>Intervention réalisée sur-le-champ par un chirurgien plasticien en salle dédiée.</p>
-                        <a href="[LIEN_RDV]" class="btn-ghost" style="margin-top: 1rem;">Prendre RDV</a>
-                    </div>
+                <h2 class="text-navy text-center" style="margin-bottom:3rem;">Le choix de la sécurité et de l'esthétique</h2>
+                <div class="table-glass">
+                    <table style="width:100%;">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Churchill SkinCheck</th>
+                                <th>Dermatologue classique</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight:500;">Diagnostic</td>
+                                <td>✓ Dermoscopie Heine DeltaOne</td>
+                                <td>Variable selon équipement</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:500;">Ablation le jour même</td>
+                                <td>✓ Dans la majorité des cas</td>
+                                <td>✗ Renvoi vers chirurgien</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:500;">Résultat cicatriciel</td>
+                                <td>✓ Techniques de chirurgie plastique</td>
+                                <td>Variable</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:500;">Analyse anatomopathologique</td>
+                                <td>✓ Systématique</td>
+                                <td>Variable</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:500;">Délais globaux</td>
+                                <td>✓ 1 seule consultation</td>
+                                <td>2 RDV minimum</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-center" style="margin-top:4rem;">
+                    <a href="[LIEN_RDV]" class="btn-gold text-center">Prendre rendez-vous maintenant</a>
                 </div>
             </div>
         </section>
         
-        
-        <!-- CTA Section -->
-        <section class="section-navy text-center">
-            <div class="container fade-up">
-                <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
-                <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Nos créneaux d'urgence vous permettent d'être rassuré ou pris en charge sans délai.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -132,32 +221,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise en dermato-chirurgie et diagnostic rapide. Encadré par la Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/fr/services.html">Lésions suspectes</a></li>
-                        <li><a href="/fr/technologie.html">Le Dermatoscope</a></li>
-                        <li><a href="/fr/tarifs.html">Honoraires & Remboursement</a></li>
+                        <li><a href="/fr/services.html#bilan">Bilan cutané complet</a></li>
+                        <li><a href="/fr/services.html#medical">Ablation médicale suspecte</a></li>
+                        <li><a href="/fr/services.html#cosmetique">Ablation cosmétique bénigne</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Bruxelles</li>
+                        <li>Avenue Winston Churchill, Uccle, Bruxelles <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. Tous droits réservés. | <a href="/fr/mentions-legales.html">Mentions légales</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Bruxelles</span>
+                <span class="text-muted">Site réalisé par Roots Agency | <a href="/fr/mentions-legales.html" class="text-muted">Mentions légales</a></span>
             </div>
 
         </div>

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frequently Asked Questions - Churchill SkinCheck</title>
-    <meta name="description" content="Discover answers to frequently asked questions about Churchill SkinCheck.">
+    <title>FAQ | Churchill SkinCheck</title>
+    <meta name="description" content="Answers relating toward dermatoscopy details plus general excision questions in Brussels.">
     <!-- Open Graph -->
-    <meta property="og:title" content="FAQ - Churchill SkinCheck">
-    <meta property="og:description" content="Discover answers to frequently asked questions about Churchill SkinCheck.">
+    <meta property="og:title" content="FAQ | Churchill SkinCheck">
+    <meta property="og:description" content="Answers relating toward dermatoscopy details plus general excision questions in Brussels.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/faq.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/en/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/en/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/en/technology.html">Technology</a>
                 <a href="/en/pricing.html">Pricing</a>
                 <a href="/en/faq.html">FAQ</a>
+                <a href="/en/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/faq.html" class="">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Book Appt</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/faq.html" class="">FR</a>
                     <a href="/en/faq.html" class="active">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">Quick Appt</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,42 +91,96 @@
             <a href="/en/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Book Appointment</a>
+        <div class="lang-switch">
+                    <a href="/fr/faq.html" class="">FR</a> | 
+                    <a href="/en/faq.html" class="active">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Book Appointment</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
-            <div class="container fade-up"><h1>Frequently Asked Questions</h1></div>
-        </section>
-        <section>
-            <div class="container fade-up" style="max-width: 800px; margin: 0 auto;">
-                <div class="faq-item">
-                    <div class="faq-question">How does the consultation work? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
-                    <div class="faq-answer"><p>The doctor examines the lesion. If there is a surgical indication, removal can be done directly.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Is it reimbursed? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
-                    <div class="faq-answer"><p>A portion of the fees is generally reimbursed by mutual insurance according to rates in force.</p></div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">What is a pathological analysis? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
-                    <div class="faq-answer"><p>Any removed lesion is sent to a laboratory for microscopic analysis to ensure a definitive diagnosis.</p></div>
-                </div>
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="container fade-up">
+                <h1 class="text-navy">Frequently Unpackable Answers</h1>
             </div>
         </section>
-        
-        
-        <!-- CTA Section -->
+
+        <section class="section-alt">
+            <div class="container fade-up" style="max-width:800px;">
+                
+                <h2 class="text-navy" style="margin:2rem 0 1.5rem; font-size:1.75rem;">Before Appointment Phasing</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Are prescriptions technically obligated prior? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Zero prior referrals translate strictly required. Connect your desired timeslot instantly directly inside the booking grid automatically.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Fasting prerequisites applied initially? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">No fasting limits engaged. Superlight superficial local liquid anesthesia acts completely independent requiring zero digestive blocking protocols heavily.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Pediatric patient limitations mapped? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Minors cleared entirely provided registered parental elements visibly align confirming procedural permissions openly together.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What paper items belong natively? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Basic standard ID parameters strictly alongside updated mutual health metric stickers validating eventual clinical financial refunds cleanly.</div>
+                </div>
+
+                <h2 class="text-navy" style="margin:3rem 0 1.5rem; font-size:1.75rem;">During Interventional Process</h2>
+                <div class="faq-item">
+                    <div class="faq-question">How does standard inspection flow initially map out? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Scanning targets utilizing Heine DeltaOne optics isolates clear data vectors rapidly pushing toward verbal dialogue explaining operative logic rules instantly visibly.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Can extraction happen literally parallel matching immediate timelines? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Effectively yes targeting extreme majority rates logically whenever indicated digitally prior during intake phase systems directly streamlining actions effortlessly today!</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Pain scaling regarding anesthetics? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Minor pinch translating practically subsecond duration elements wiping external nerve input completely triggering total comfortable operation states directly instantly globally thereafter sequentially seamlessly.</div>
+                </div>
+
+                <h2 class="text-navy" style="margin:3rem 0 1.5rem; font-size:1.75rem;">Immediate Healing Timeframes</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Thread removal logistics mapped? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Generally oscillating 8 days spanning facial limits pushing toward 10 up targeting 15 days clearing limb boundaries seamlessly dynamically.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Activity resetting thresholds analyzed? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Workplace resuming triggers normally functionally matching immediate timelines while blocking intense heartrate stretching events spanning roughly crossing a 72-hour protective phase dynamically sequentially.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">When do lab results conclude operations fully? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Pathological endpoints cross the finish line landing realistically roughly between 10 clearing naturally crossing toward 15 active business rotations continually relaying back safely globally properly eventually.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Evaluating final visible scarring parameters visually? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Every incision fundamentally yields a mark structurally effectively. Surgeons mitigate dimensions actively tracking specific biological folding mapping rendering results progressively turning heavily invisible mirroring long-term progression realistically appropriately completely.</div>
+                </div>
+
+                <h2 class="text-navy" style="margin:3rem 0 1.5rem; font-size:1.75rem;">Billing & Subsidy Maps</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Does financial mutual support exist inherently automatically? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Partially valid purely targeting medically diagnosed risk targets fully voiding aesthetic purely requests entirely seamlessly reliably structurally.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Execution loops finalizing refunds optimally? <iconify-icon icon="lucide:chevron-down"></iconify-icon></div>
+                    <div class="faq-answer">Surgeons provide standardized administrative medical papers natively bridging toward local desk health infrastructure clearing processing logic successfully internally smoothly effortlessly systematically natively.</div>
+                </div>
+
+            </div>
+        </section>
         <section class="section-navy text-center">
             <div class="container fade-up">
-                <h2 style="margin-bottom: 1rem;">Do not wait to check a suspicious lesion</h2>
-                <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Our emergency slots allow you to be reassured or treated without delay.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Check availabilities</a>
+                <h2 style="margin-bottom: 1rem;">Confirm rapid actions ideally today</h2>
+                <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Secure absolute schedule spots natively easily efficiently perfectly.</p>
+                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Jump directly toward matching slots</a>
             </div>
         </section>
+        
     </main>
 
     <!-- Footer -->
@@ -129,32 +188,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise in dermato-surgery and quick diagnosis. Embedded in Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/en/services.html">Suspect Lesions</a></li>
-                        <li><a href="/en/technology.html">Dermatoscope</a></li>
-                        <li><a href="/en/pricing.html">Fees & Reimbursement</a></li>
+                        <li><a href="/en/services.html#bilan">Comprehensive mole check</a></li>
+                        <li><a href="/en/services.html#medical">Medical lesion removal</a></li>
+                        <li><a href="/en/services.html#cosmetique">Cosmetic mole removal</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Brussels</li>
+                        <li>Avenue Winston Churchill, Uccle, Brussels <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. All rights reserved. | <a href="/en/legal.html">Legal Mentions</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Brussels</span>
+                <span class="text-muted">Site by Roots Agency | <a href="/en/legal.html" class="text-muted">Legal mentions</a></span>
             </div>
 
         </div>

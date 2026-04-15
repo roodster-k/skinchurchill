@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarifs & Remboursements - Churchill SkinCheck</title>
-    <meta name="description" content="Consultez les informations sur nos honoraires, les actes posés et le potentiel de remboursement par l'INAMI.">
+    <title>Tarifs & Remboursements | Churchill SkinCheck Bruxelles</title>
+    <meta name="description" content="Tarifs transparents pour le bilan cutané et l'ablation de lésions chez Churchill SkinCheck, Bruxelles. Remboursement mutualité belge pour ablations médicalement indiquées.">
     <!-- Open Graph -->
-    <meta property="og:title" content="Tarifs - Churchill SkinCheck">
-    <meta property="og:description" content="Consultez les informations sur nos honoraires, les actes posés et le potentiel de remboursement par l'INAMI.">
+    <meta property="og:title" content="Tarifs & Remboursements | Churchill SkinCheck">
+    <meta property="og:description" content="Tarifs transparents pour le bilan cutané et l'ablation de lésions chez Churchill SkinCheck, Bruxelles. Remboursement mutualité belge pour ablations médicalement indiquées.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/tarifs.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/fr/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/fr/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/fr/technologie.html">Technologie</a>
                 <a href="/fr/tarifs.html">Tarifs</a>
                 <a href="/fr/faq.html">FAQ</a>
+                <a href="/fr/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/tarifs.html" class="active">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/tarifs.html" class="active">FR</a>
                     <a href="/en/tarifs.html" class="">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">RDV Rapide</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,29 +91,87 @@
             <a href="/fr/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Prendre Rendez-vous</a>
+        <div class="lang-switch">
+                    <a href="/fr/tarifs.html" class="active">FR</a> | 
+                    <a href="/en/tarifs.html" class="">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Prendre Rendez-vous</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
-            <div class="container fade-up"><h1>Tarifs & Remboursements</h1></div>
-        </section>
-        <section>
-            <div class="container fade-up text-center">
-                <h2>Actes posés par des chirurgiens plasticiens</h2>
-                <div class="card" style="max-width: 600px; margin: 2rem auto;">
-                    <h3>Consultation & Diagnostic</h3>
-                    <p class="text-gold" style="font-size: 2rem; font-weight: bold; margin: 1rem 0;">[TARIF]</p>
-                    <p class="text-secondary">Des remboursements INAMI et assurances complémentaires peuvent s'appliquer. Ces montants sont indicatifs et dépendent de l'acte précis.</p>
-                </div>
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="container fade-up">
+                <h1 class="text-navy">Tarifs & Remboursements</h1>
+                <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem;">Transparence totale sur nos tarifs. Certaines prestations sont partiellement remboursées par votre mutualité belge.</p>
             </div>
         </section>
         
-        
-        <!-- CTA Section -->
+        <section class="section-alt">
+            <div class="container fade-up">
+                <div class="table-glass" style="max-width:1000px; margin: 0 auto 3rem;">
+                    <table style="width:100%;">
+                        <thead>
+                            <tr>
+                                <th>Prestation</th>
+                                <th>Tarif indicatif</th>
+                                <th>Remboursement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight:500;">Consultation & Bilan Cutané</td>
+                                <td class="text-gold" style="font-weight:600;">[TARIF] €</td>
+                                <td>Consultation médicale standard</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:500;">Ablation médicale — naevus suspect</td>
+                                <td class="text-gold" style="font-weight:600;">[TARIF] €</td>
+                                <td>✓ Partiellement remboursée (INAMI)</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:500;">Ablation cosmétique — 1 lésion</td>
+                                <td class="text-gold" style="font-weight:600;">[TARIF] €</td>
+                                <td>✗ Non remboursée</td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight:500;">Ablation cosmétique — lésions multiples</td>
+                                <td class="text-gold" style="font-weight:600;">Sur devis</td>
+                                <td>✗ Non remboursée</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card card-gold" style="max-width:1000px; margin:0 auto; background: var(--churchill-gold-soft); border-color:var(--border-gold);">
+                    <p style="font-style:italic; font-size:0.95rem; color:var(--churchill-navy);">Les tarifs indiqués sont donnés à titre indicatif. Le tarif définitif est établi lors de la consultation en fonction de la nature, de la taille et de la localisation de la lésion. Pour les actes médicalement indiqués, une partie peut être remboursée par votre mutualité sur base du tarif INAMI en vigueur. Munissez-vous de votre carte d'identité et de votre vignette mutualité.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container fade-up layout-grid">
+                <div>
+                    <h2 class="text-navy" style="margin-bottom:1rem;">Comprendre votre remboursement</h2>
+                    <p style="margin-bottom:1.5rem;">Notre cabinet opère selon les standards de la chirurgie plastique reconstructrice avec une application stricte des principes déontologiques liés au diagnostic d'anomalies cutanées.</p>
+                </div>
+                <div>
+                    <div style="margin-bottom:1.5rem;">
+                        <h4 style="color:var(--text-primary); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle-2" class="text-gold"></iconify-icon> Acte médical (remboursé)</h4>
+                        <p style="font-size:0.95rem;">Ablation d'un naevus suspect, indication confirmée par le chirurgien → remboursement partiel mutualité sur base nomenclatures INAMI.</p>
+                    </div>
+                    <div style="margin-bottom:1.5rem;">
+                        <h4 style="color:var(--text-primary); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:minus-circle" class="text-muted"></iconify-icon> Acte cosmétique (non remboursé)</h4>
+                        <p style="font-size:0.95rem;">Ablation décidée pour des raisons de confort personnel ou d'esthétique pure → à charge intégrale du patient. <em>(Note : certaines mutuelles complémentaires couvrent pourtant ce type de frais, renseignez-vous)</em></p>
+                    </div>
+                    <div style="padding-top:1rem; border-top:1px solid var(--border-light);">
+                        <p style="font-size:0.95rem; font-weight:600;">Pensez à apporter lors de votre RV : <br><span style="font-weight:400; color:var(--text-secondary);">Votre carte d'identité (eID) et votre vignette mutualité actuelle.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section-navy text-center">
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
@@ -116,6 +179,7 @@
                 <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
             </div>
         </section>
+        
     </main>
 
     <!-- Footer -->
@@ -123,32 +187,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise en dermato-chirurgie et diagnostic rapide. Encadré par la Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/fr/services.html">Lésions suspectes</a></li>
-                        <li><a href="/fr/technologie.html">Le Dermatoscope</a></li>
-                        <li><a href="/fr/tarifs.html">Honoraires & Remboursement</a></li>
+                        <li><a href="/fr/services.html#bilan">Bilan cutané complet</a></li>
+                        <li><a href="/fr/services.html#medical">Ablation médicale suspecte</a></li>
+                        <li><a href="/fr/services.html#cosmetique">Ablation cosmétique bénigne</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Bruxelles</li>
+                        <li>Avenue Winston Churchill, Uccle, Bruxelles <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. Tous droits réservés. | <a href="/fr/mentions-legales.html">Mentions légales</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Bruxelles</span>
+                <span class="text-muted">Site réalisé par Roots Agency | <a href="/fr/mentions-legales.html" class="text-muted">Mentions légales</a></span>
             </div>
 
         </div>

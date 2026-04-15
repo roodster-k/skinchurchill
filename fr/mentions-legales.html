@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentions Légales - Churchill SkinCheck</title>
-    <meta name="description" content="Mentions légales, politique de confidentialité, RGPD et cookies de Churchill SkinCheck.">
+    <title>Mentions Légales & RGPD | Churchill SkinCheck</title>
+    <meta name="description" content="Mentions légales, politique de confidentialité de données de santé clinique, RGPD et cookies de Churchill SkinCheck Bruxelles.">
     <!-- Open Graph -->
-    <meta property="og:title" content="Mentions Légales - Churchill SkinCheck">
-    <meta property="og:description" content="Mentions légales, politique de confidentialité, RGPD et cookies de Churchill SkinCheck.">
+    <meta property="og:title" content="Mentions Légales | Churchill SkinCheck">
+    <meta property="og:description" content="Mentions légales, politique de confidentialité de données de santé clinique, RGPD et cookies de Churchill SkinCheck Bruxelles.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/mentions-legales.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/fr/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/fr/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/fr/technologie.html">Technologie</a>
                 <a href="/fr/tarifs.html">Tarifs</a>
                 <a href="/fr/faq.html">FAQ</a>
+                <a href="/fr/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/mentions-legales.html" class="active">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/mentions-legales.html" class="active">FR</a>
                     <a href="/en/mentions-legales.html" class="">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">RDV Rapide</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,36 +91,47 @@
             <a href="/fr/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Prendre Rendez-vous</a>
+        <div class="lang-switch">
+                    <a href="/fr/mentions-legales.html" class="active">FR</a> | 
+                    <a href="/en/mentions-legales.html" class="">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Prendre Rendez-vous</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
-            <div class="container fade-up"><h1>Mentions Légales & RGPD</h1></div>
-        </section>
-        <section>
-            <div class="container fade-up" style="max-width: 800px; margin: 0 auto; text-align: left;">
-                <h2>1. Responsable du traitement</h2>
-                <p>La Clinique Churchill, Avenue Winston Churchill, 1180 Uccle, Belgique.</p>
-                <h2 style="margin-top: 2rem;">2. Cookies & ePrivacy</h2>
-                <p>Ce site n'utilise que des cookies strictement nécessaires et des outils d'analyse anonymisés.</p>
-                <h2 style="margin-top: 2rem;">3. Données de santé</h2>
-                <p>Vos données envoyées via le formulaire sont traitées en toute confidentialité.</p>
-            </div>
-        </section>
-        
-        
-        <!-- CTA Section -->
-        <section class="section-navy text-center">
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
             <div class="container fade-up">
-                <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
-                <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Nos créneaux d'urgence vous permettent d'être rassuré ou pris en charge sans délai.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
+                <h1 class="text-navy">Mentions Légales & Confidentialité RGPD</h1>
             </div>
         </section>
+
+        <section class="section-alt">
+            <div class="container fade-up card" style="max-width:900px; margin: 0 auto; padding: 3rem;">
+                <h2 class="text-navy" style="font-size: 1.5rem; margin-bottom:1rem;">1. Éditeur et Responsable</h2>
+                <p style="margin-bottom:2rem;">Ce site web (https://skincheck.cliniquechurchill.be/) est opéré par <strong>Clinique Churchill</strong> dans le cadre de ses services officiels paramédicaux et chirurgicaux.<br><br>
+                Adresse du siège : Avenue Winston Churchill, 1180 Uccle, Bruxelles, Belgique.<br>
+                Contact email : [EMAIL_CONTACT]<br>
+                Contact téléphone : [TEL_CLINIQUE]<br>
+                Hébergement digital assumé et déployé sur l'infrastructure Cloudflare.</p>
+                
+                <h2 class="text-navy" style="font-size: 1.5rem; margin-bottom:1rem;">2. Propriété Intellectuelle</h2>
+                <p style="margin-bottom:2rem;">Le contenu de ce site ne saurait être modifié, recopié à des fins tierces hors citation claire assortie du backlink. Textes, logos (y compris celui the Clinique Churchill), charte graphique de la Roots Agency sont juridiquement encadrés.</p>
+                
+                <h2 class="text-navy" style="font-size: 1.5rem; margin-bottom:1rem;">3. Données Personnelles et de Santé (RGPD)</h2>
+                <p style="margin-bottom:2rem;">Vos démarches pro-actives en matière de réservation web transitent via des formulaires sécurisés. Par nature, certaines informations communiquées peuvent s'assimiler indirectement à des données concernant votre état de santé ou projet médical.<br><br>
+                Nous nous engageons formellement à ne traiter ces informations <strong>QUE</strong> dans le cadre du traitement de la requête à laquelle vous avez expressément consenti. Aucune transaction externe commerciale hors secrétariat et médecin ne s'opère.<br>
+                Vos informations récoltées (Nom, Email, Numéro) sont utilisées pendant un temps raisonnable jusqu’à l'attribution de la requête ou suppression consécutive en base aux demandes patient. Les logs et le stockage Supabase sont situés sur serveurs européens cryptés.</p>
+                
+                <h2 class="text-navy" style="font-size: 1.5rem; margin-bottom:1rem;">4. Cookies & ePrivacy</h2>
+                <p style="margin-bottom:2rem;">La présence de certains cookies strictement nécessaires permet le bon fonctionnement logique de la plateforme (variables de session liées aux formulaires ou la distribution de contenu côté serveur sur les Edge nodes CDN réseau).<br>
+                Les composants d'analyse analytique éventuellement agrégés sont 100% anonymisés (adresses IP tronquées ou anonymisées). En naviguant de façon persistante ou via actions positives (ex: bouton formulaire avec conditionnalité cochant RGPD), nous interprétons cela comme un accord implicite de la présente juridiction minimale.</p>
+                
+            </div>
+        </section>
+        
     </main>
 
     <!-- Footer -->
@@ -123,32 +139,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise en dermato-chirurgie et diagnostic rapide. Encadré par la Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/fr/services.html">Lésions suspectes</a></li>
-                        <li><a href="/fr/technologie.html">Le Dermatoscope</a></li>
-                        <li><a href="/fr/tarifs.html">Honoraires & Remboursement</a></li>
+                        <li><a href="/fr/services.html#bilan">Bilan cutané complet</a></li>
+                        <li><a href="/fr/services.html#medical">Ablation médicale suspecte</a></li>
+                        <li><a href="/fr/services.html#cosmetique">Ablation cosmétique bénigne</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Bruxelles</li>
+                        <li>Avenue Winston Churchill, Uccle, Bruxelles <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. Tous droits réservés. | <a href="/fr/mentions-legales.html">Mentions légales</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Bruxelles</span>
+                <span class="text-muted">Site réalisé par Roots Agency | <a href="/fr/mentions-legales.html" class="text-muted">Mentions légales</a></span>
             </div>
 
         </div>

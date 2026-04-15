@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Appointment - Churchill SkinCheck</title>
-    <meta name="description" content="Get in touch with Clinique Churchill for a SkinCheck.">
+    <title>Contact & Appointments | Churchill SkinCheck</title>
+    <meta name="description" content="Confirm schedule actions effortlessly with Clinique Churchill plastic surgery arrays optimally.">
     <!-- Open Graph -->
-    <meta property="og:title" content="Contact - Churchill SkinCheck">
-    <meta property="og:description" content="Get in touch with Clinique Churchill for a SkinCheck.">
+    <meta property="og:title" content="Contact | Churchill SkinCheck">
+    <meta property="og:description" content="Confirm schedule actions effortlessly with Clinique Churchill plastic surgery arrays optimally.">
     <meta property="og:url" content="https://skincheck.cliniquechurchill.be/contact.html">
     <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
     
@@ -27,17 +27,21 @@
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
-      "image": "https://skincheck.cliniquechurchill.be/assets/logo.png",
-      "@id": "",
-      "url": "https://skincheck.cliniquechurchill.be",
-      "telephone": "[TEL_CLINIQUE]", 
+      "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle",
-        "postalCode": "1180",
+        "addressLocality": "Uccle, Bruxelles",
         "addressCountry": "BE"
-      }
+      },
+      "medicalSpecialty": "PlasticSurgery",
+      "availableService": [
+        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
+        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
+        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+      ],
+      "telephone": "[TEL_CLINIQUE]",
+      "url": "https://skincheck.cliniquechurchill.be"
     }
     </script>
 </head>
@@ -46,9 +50,9 @@
     <!-- Header -->
     <header class="main-header">
         <div class="container nav-container">
-            <a href="/en/index.html" class="logo">
-                <!-- REMPLACER : Logo -->
-                <img src="https://placehold.co/150x40?text=Churchill+SkinCheck" alt="Churchill SkinCheck Logo">
+            <a href="/en/index.html" class="logo-box">
+                <span class="logo-title">Churchill SkinCheck</span>
+                <span class="logo-sub">by Clinique Churchill</span>
             </a>
             
             
@@ -58,15 +62,16 @@
                 <a href="/en/technology.html">Technology</a>
                 <a href="/en/pricing.html">Pricing</a>
                 <a href="/en/faq.html">FAQ</a>
+                <a href="/en/contact.html">Contact</a>
             </nav>
 
 
             <div class="nav-right">
-                <div class="lang-switch">
-                    <a href="/fr/contact.html" class="">FR</a> | 
+                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">Book Appt</a>
+                <div class="lang-switch d-none d-md-flex">
+                    <a href="/fr/contact.html" class="">FR</a>
                     <a href="/en/contact.html" class="active">EN</a>
                 </div>
-                <a href="[LIEN_RDV]" class="btn-gold d-none d-md-inline-flex" target="_blank" rel="noopener">Quick Appt</a>
                 <button class="burger-btn" aria-label="Menu">
                     <span class="burger-icon"></span>
                 </button>
@@ -86,64 +91,90 @@
             <a href="/en/contact.html">Contact</a>
         </nav>
 
-        <div class="mt-4" style="margin-top: 2rem;">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Book Appointment</a>
+        <div class="lang-switch">
+                    <a href="/fr/contact.html" class="">FR</a> | 
+                    <a href="/en/contact.html" class="active">EN</a>
+        </div>
+        <div class="mt-4">
+            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Book Appointment</a>
         </div>
     </div>
 
     <main style="padding-top: 80px;">
         
-        <section class="bg-secondary text-center">
-            <div class="container fade-up"><h1>Contact Churchill SkinCheck</h1></div>
+        <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
+            <div class="container fade-up">
+                <h1 class="text-navy">Find us locally in Brussels</h1>
+                <p style="margin-top:2rem;"><a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Launch clinical scheduling</a></p>
+            </div>
         </section>
-        <section>
-            <div class="container fade-up soft-grid">
-                <div>
-                    <h2>Send us a message</h2>
-                    <form id="contact-form" class="card" style="margin-top: 1.5rem;">
-                        <input type="text" id="website_url" name="website_url" style="display:none" tabindex="-1" autocomplete="off">
-                        
-                        <div style="margin-bottom: 1rem; text-align: left;">
-                            <label style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Full Name</label>
-                            <input type="text" name="name" required style="width:100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
-                        </div>
-                        <div style="margin-bottom: 1rem; text-align: left;">
-                            <label style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Email</label>
-                            <input type="email" name="email" required style="width:100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
-                        </div>
-                        <div style="margin-bottom: 1rem; text-align: left;">
-                            <label style="display:block; margin-bottom: 0.5rem; font-weight: 500;">Message</label>
-                            <textarea name="message" rows="4" required style="width:100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;"></textarea>
-                        </div>
-                        <button type="submit" class="btn-gold">Send request</button>
-                    </form>
+
+        <section class="section-alt">
+            <div class="container layout-grid">
+                <div class="fade-up">
+                    <div class="card" style="padding:3rem;">
+                        <h2 class="text-navy" style="margin-bottom:2rem; font-size:1.75rem;">Broadcast a written ping</h2>
+                        <form id="contact-form">
+                            <!-- Honeypot -->
+                            <div style="display:none;"><input type="text" id="website_url" name="website_url" autocomplete="off" tabindex="-1"></div>
+                            
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="name">Absolute Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Ex. John Doe">
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="email">E-mail Parameter</label>
+                                <input type="email" id="email" name="email" required placeholder="john.doe@mail.com">
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="phone">Callable Logic Number</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="04XXXXXXXX">
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="message">Transmission Frame Body</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Clarify how our grid assists effectively?"></textarea>
+                            </div>
+                            <div style="margin-bottom: 1.5rem; display:flex; align-items:flex-start; gap:0.75rem;">
+                                <input type="checkbox" id="rgpd" name="rgpd" required style="width:20px; flex-shrink:0; margin-top:0.2rem;">
+                                <label for="rgpd" style="font-size:0.85rem; font-weight:400; color:var(--text-secondary);">Validating information storage matching precise <a href="/en/legal.html" style="text-decoration:underline;">GDPR Legal Protocol Frameworks</a> enabling continuous functional replies mapping health logic endpoints optimally completely reliably continuously effectively securely successfully appropriately.</label>
+                            </div>
+                            
+                            <button type="submit" class="btn-gold w-100" style="width:100%;">Commit Transmission Stream</button>
+                        </form>
+                    </div>
                 </div>
-                <div>
-                    <h2>Practical Information</h2>
-                    <ul style="list-style:none; line-height:2; margin-top:1.5rem; text-align: left;">
-                        <li><strong>Clinic:</strong> Churchill SkinCheck</li>
-                        <li><strong>Address:</strong> Avenue Winston Churchill [NUMERO], 1180 Uccle, Brussels</li>
-                        <li><strong>Phone:</strong> [TEL_CLINIQUE]</li>
-                        <li><strong>Email:</strong> [EMAIL_CONTACT]</li>
-                        <li><strong>Hours:</strong> [HORAIRES]</li>
+
+                <div class="fade-up">
+                    <h2 class="text-navy" style="margin-bottom:2rem;">Core Coordinates Maps</h2>
+                    <ul style="border-left:2px solid var(--border-gold); padding-left:1.5rem; margin-bottom:3rem;">
+                        <li style="margin-bottom:1rem;">
+                            <strong style="color:var(--text-primary); display:block;">Medical Hub Registry Tag</strong>
+                            Churchill SkinCheck - Clinique Churchill
+                        </li>
+                        <li style="margin-bottom:1rem;">
+                            <strong style="color:var(--text-primary); display:block;">Geo Track Lines</strong>
+                            Avenue Winston Churchill <!-- REMPLACER -->, 1180 Uccle, Brussels
+                        </li>
+                        <li style="margin-bottom:1rem;">
+                            <strong style="color:var(--text-primary); display:block;">Inbound Receptions Nodes</strong>
+                            [TEL_CLINIQUE]<br>
+                            <a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a>
+                        </li>
+                        <li>
+                            <strong style="color:var(--text-primary); display:block;">Timeline Flow Capacity Hours</strong>
+                            [HORAIRES] <!-- REMPLACER -->
+                        </li>
                     </ul>
-                    <!-- REMPLACER : Google Maps -->
-                    <div style="margin-top: 2rem; background: #eee; height: 250px; display:flex; align-items:center; justify-content:center; border-radius:12px;">
-                        [Google Maps Embed]
+
+                    <div style="border-radius:1rem; overflow:hidden; border:1px solid var(--border-light); height:280px; background:#e0e0e0; display:flex; justify-content:center; align-items:center;">
+                        <!-- REMPLACER : embed Google Maps Clinique Churchill -->
+                        <span class="text-muted">Google Maps Global Embed Frames</span>
+                        <!-- <iframe src="..." width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
                     </div>
                 </div>
             </div>
         </section>
         
-        
-        <!-- CTA Section -->
-        <section class="section-navy text-center">
-            <div class="container fade-up">
-                <h2 style="margin-bottom: 1rem;">Do not wait to check a suspicious lesion</h2>
-                <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Our emergency slots allow you to be reassured or treated without delay.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Check availabilities</a>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
@@ -151,32 +182,37 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <img src="https://placehold.co/150x40?text=Logo+White" alt="Churchill SkinCheck" class="footer-logo">
-                    <p style="font-size: 0.9rem;">
-                        Expertise in dermato-surgery and quick diagnosis. Embedded in Clinique Churchill, Uccle.
-                    </p>
+                    <div class="logo-box" style="margin-bottom: 1.5rem;">
+                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
+                        <span class="logo-sub">by Clinique Churchill</span>
+                    </div>
                 </div>
                 
                 <div class="footer-col" style="justify-self: center;">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="/en/services.html">Suspect Lesions</a></li>
-                        <li><a href="/en/technology.html">Dermatoscope</a></li>
-                        <li><a href="/en/pricing.html">Fees & Reimbursement</a></li>
+                        <li><a href="/en/services.html#bilan">Comprehensive mole check</a></li>
+                        <li><a href="/en/services.html#medical">Medical lesion removal</a></li>
+                        <li><a href="/en/services.html#cosmetique">Cosmetic mole removal</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li>Avenue Winston Churchill [NUMERO]</li>
-                        <li>1180 Uccle, Brussels</li>
+                        <li>Avenue Winston Churchill, Uccle, Brussels <!-- REMPLACER --></li>
                         <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
                         <li>[TEL_CLINIQUE]</li>
                     </ul>
+                    <div class="social-icons">
+                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> Churchill SkinCheck. All rights reserved. | <a href="/en/legal.html">Legal Mentions</a>
+                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Brussels</span>
+                <span class="text-muted">Site by Roots Agency | <a href="/en/legal.html" class="text-muted">Legal mentions</a></span>
             </div>
 
         </div>
