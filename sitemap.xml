@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- FR Pages -->
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/index.html"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/services.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/services.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/equipe.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/team.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/equipe.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/technologie.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/technology.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/technologie.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/tarifs.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/tarifs.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/faq.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/contact.html"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/blog.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/fr/mentions-legales.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/legal.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/mentions-legales.html"/>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- EN Pages -->
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/index.html"/>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/services.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/services.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/services.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/team.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/team.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/technology.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/technologie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/technology.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/tarifs.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/pricing.html"/>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/faq.html"/>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/contact.html"/>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/blog.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/blog.html"/>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://skincheck.cliniquechurchill.be/en/legal.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/mentions-legales.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/legal.html"/>
+    <priority>0.4</priority>
+  </url>
+</urlset>
