@@ -161,8 +161,8 @@ def create_html(lang, title, desc, url_path, content, og_title):
             {header_nav}
 
             <div class="nav-right">
-                <a href="[LIEN_RDV]" class="btn-ghost d-none d-md-inline-flex" target="_blank" rel="noopener">{'Prendre rendez-vous' if lang == 'fr' else 'Book Appt'}</a>
-                <div class="lang-switch d-none d-md-flex">
+                <a href="[LIEN_RDV]" class="btn-ghost hidden-mobile-inline" target="_blank" rel="noopener">{'Prendre rendez-vous' if lang == 'fr' else 'Book Appt'}</a>
+                <div class="lang-switch hidden-mobile">
                     <a href="../fr{url_path.replace('/en/','/')}" class="{ 'active' if lang == 'fr' else '' }">FR</a>
                     <a href="../en{url_path.replace('/fr/','/')}" class="{ 'active' if lang == 'en' else '' }">EN</a>
                 </div>
@@ -228,8 +228,8 @@ pages_fr = [
                         Churchill SkinCheck est le seul service bruxellois combinant diagnostic dermatoscopique de précision et ablation chirurgicale par des chirurgiens plasticiens — lors d'une seule et même consultation.
                     </p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Prendre rendez-vous</a>
-                        <a href="#services" class="btn-ghost">Découvrir nos services</a>
+                        <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                        <a href="#services" class="btn-ghost" style="margin-top:auto;">Découvrir nos services</a>
                     </div>
                 </div>
                 <div class="fade-up" style="transition-delay: 0.2s;">
@@ -299,21 +299,21 @@ pages_fr = [
                         <h3 style="margin-bottom:1rem;">Bilan Cutané Complet</h3>
                         <p style="flex-grow:1;">Examen de l'ensemble de vos lésions au dermatoscope Heine DeltaOne. Votre chirurgien analyse chaque naevus selon la règle ABCDE et détermine ceux nécessitant une surveillance rapprochée ou une ablation.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Durée : 20–30 min</p>
-                        <a href="../fr/services.html#bilan" class="btn-ghost">En savoir plus</a>
+                        <a href="../fr/services.html#bilan" class="btn-ghost" style="margin-top:auto;">En savoir plus</a>
                     </div>
                     <div class="card card-gold fade-up" style="display:flex; flex-direction:column; transition-delay:0.1s;">
                         <span class="badge" style="align-self:flex-start; background:var(--churchill-gold); color:#1a2b42;">Acte médical • Remboursé mutuelle</span>
                         <h3 style="margin-bottom:1rem;">Ablation de Naevus Suspect</h3>
                         <p style="flex-grow:1;">Exérèse chirurgicale sous anesthésie locale d'un naevus atypique ou suspect, suivie d'une analyse anatomopathologique en laboratoire. Dans la majorité des cas, l'ablation est réalisée lors de la même consultation que le diagnostic.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Durée : 30–45 min</p>
-                        <a href="../fr/services.html#medical" class="btn-gold">En savoir plus</a>
+                        <a href="../fr/services.html#medical" class="btn-gold" style="margin-top:auto;">En savoir plus</a>
                     </div>
                     <div class="card fade-up" style="display:flex; flex-direction:column; transition-delay:0.2s;">
                         <span class="badge" style="align-self:flex-start;">Confort & Esthétique</span>
                         <h3 style="margin-bottom:1rem;">Ablation Cosmétique</h3>
                         <p style="flex-grow:1;">Retrait de grains de beauté bénins pour des raisons esthétiques ou de confort (gêne vestimentaire, irritation). Réalisé par un chirurgien plasticien pour un résultat cicatriciel optimal.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Durée : 20–40 min</p>
-                        <a href="../fr/services.html#cosmetique" class="btn-ghost">En savoir plus</a>
+                        <a href="../fr/services.html#cosmetique" class="btn-ghost" style="margin-top:auto;">En savoir plus</a>
                     </div>
                 </div>
             </div>
@@ -329,7 +329,7 @@ pages_fr = [
                         Le dermatoscope Heine DeltaOne est l'outil de référence utilisé par les spécialistes les plus exigeants au monde. Son optique haute résolution et son éclairage LED polarisé permettent de visualiser les structures cutanées profondes, invisibles à l'œil nu. C'est grâce à cet équipement que nos chirurgiens peuvent poser un diagnostic précis et éviter les ablations inutiles.
                     </p>
                     <a href="https://www.heine.com/" target="_blank" rel="noopener" class="text-gold" style="font-size:0.9rem; text-decoration:underline; display:inline-block; margin-bottom:2rem;">En savoir plus sur cet équipement</a><br>
-                    <a href="../fr/technologie.html" class="btn-ghost">Notre technologie en détail</a>
+                    <a href="../fr/technologie.html" class="btn-ghost" style="margin-top:auto;">Notre technologie en détail</a>
                 </div>
                 <div class="fade-up">
                     <div class="card" style="padding:1rem;">
@@ -349,7 +349,7 @@ pages_fr = [
                 </div>
                 <div class="layout-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                     <div class="card fade-up text-center">
-                        <img src="https://placehold.co/300x300?text=Photo+1" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:150px; height:150px; object-fit:cover;">
+                        <img src="https://placehold.co/300x300?text=Photo+1" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:200px; height:200px; object-fit:cover;">
                         <h3>Dr. [Prénom] [Nom] <!-- REMPLACER --></h3>
                         <p class="text-gold" style="font-weight:500; font-size:0.9rem; margin-bottom:0.25rem;">Chirurgien Plasticien</p>
                         <p class="text-muted" style="font-size:0.8rem; margin-bottom:1rem;">INAMI : [INAMI 1]</p>
@@ -358,7 +358,7 @@ pages_fr = [
                         <p style="font-size:0.8rem; font-weight:600; color:var(--churchill-navy);">Dermato-chirurgie & reconstruction cutanée</p>
                     </div>
                     <div class="card fade-up text-center" style="transition-delay:0.1s;">
-                        <img src="https://placehold.co/300x300?text=Photo+2" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:150px; height:150px; object-fit:cover;">
+                        <img src="https://placehold.co/300x300?text=Photo+2" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:200px; height:200px; object-fit:cover;">
                         <h3>Dr. [Prénom] [Nom] <!-- REMPLACER --></h3>
                         <p class="text-gold" style="font-weight:500; font-size:0.9rem; margin-bottom:0.25rem;">Chirurgien Plasticien</p>
                         <p class="text-muted" style="font-size:0.8rem; margin-bottom:1rem;">INAMI : [INAMI 2]</p>
@@ -367,7 +367,7 @@ pages_fr = [
                         <p style="font-size:0.8rem; font-weight:600; color:var(--churchill-navy);">Chirurgie des lésions pigmentées & cicatrisation esthétique</p>
                     </div>
                     <div class="card fade-up text-center" style="transition-delay:0.2s;">
-                        <img src="https://placehold.co/300x300?text=Photo+3" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:150px; height:150px; object-fit:cover;">
+                        <img src="https://placehold.co/300x300?text=Photo+3" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:200px; height:200px; object-fit:cover;">
                         <h3>Dr. [Prénom] [Nom] <!-- REMPLACER --></h3>
                         <p class="text-gold" style="font-weight:500; font-size:0.9rem; margin-bottom:0.25rem;">Chirurgien Plasticien</p>
                         <p class="text-muted" style="font-size:0.8rem; margin-bottom:1rem;">INAMI : [INAMI 3]</p>
@@ -377,7 +377,7 @@ pages_fr = [
                     </div>
                 </div>
                 <div class="text-center mt-5" style="margin-top:3rem;">
-                    <a href="../fr/equipe.html" class="btn-ghost">Rencontrer l'équipe complete</a>
+                    <a href="../fr/equipe.html" class="btn-ghost" style="margin-top:auto;">Rencontrer l'équipe complete</a>
                 </div>
             </div>
         </section>
@@ -410,7 +410,7 @@ pages_fr = [
                     <h3 style="margin-bottom:1rem;">Information Remboursement</h3>
                     <p style="margin-bottom:1rem;">L'exérèse médicale d'un naevus suspect est <strong>partiellement remboursée</strong> par votre mutualité belge. L'ablation cosmétique n'est pas remboursée.</p>
                     <p style="margin-bottom:2rem;">Votre chirurgien vous orientera dès la consultation. Munissez-vous de votre carte d'identité et vignette mutualité.</p>
-                    <a href="../fr/tarifs.html" class="btn-ghost">Voir les tarifs détaillés</a>
+                    <a href="../fr/tarifs.html" class="btn-ghost" style="margin-top:auto;">Voir les tarifs détaillés</a>
                 </div>
             </div>
         </section>
@@ -432,7 +432,7 @@ pages_fr = [
                     <div class="faq-answer">Prévoyez 20 à 45 minutes selon le cas (simple examen dermatoscopique ou avec ablation consécutive).</div>
                 </div>
                 <div class="text-center" style="margin-top:3rem;">
-                    <a href="../fr/faq.html" class="btn-ghost">Toutes les questions fréquentes</a>
+                    <a href="../fr/faq.html" class="btn-ghost" style="margin-top:auto;">Toutes les questions fréquentes</a>
                 </div>
             </div>
         </section>
@@ -442,7 +442,7 @@ pages_fr = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">Prenez rendez-vous dès aujourd'hui</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Consultez un chirurgien plasticien spécialisé en dermato-chirurgie à la Clinique Churchill, Uccle.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Réserver ma consultation</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Réserver ma consultation</a>
                 <p style="margin-top:1.5rem; font-size:0.85rem; color:rgba(255,255,255,0.7);">Sans ordonnance · Prise en charge mutuelle si indication médicale · Résultats sous 10-15 jours</p>
             </div>
         </section>
@@ -473,7 +473,7 @@ pages_fr = [
                         <li><strong>Durée :</strong> 20–30 min</li>
                         <li><strong>Remboursement :</strong> Consultation médicale standard</li>
                     </ul>
-                    <a href="[LIEN_RDV]" class="btn-ghost">Prendre rendez-vous</a>
+                    <a href="[LIEN_RDV]" class="btn-ghost" style="margin-top:auto;">Prendre rendez-vous</a>
                 </div>
             </div>
         </section>
@@ -498,7 +498,7 @@ pages_fr = [
                         <p><strong>Remboursement :</strong> Partiellement remboursé si indication médicale confirmée. Apportez carte d'identité + vignette.</p>
                     </div>
                     
-                    <a href="[LIEN_RDV]" class="btn-gold">Prendre rendez-vous</a>
+                    <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;">Prendre rendez-vous</a>
                 </div>
             </div>
         </section>
@@ -514,7 +514,7 @@ pages_fr = [
                         <li><strong>Durée :</strong> 20–40 min selon nombre et localisation</li>
                         <li><strong>Remboursement :</strong> Non remboursé (acte cosmétique).</li>
                     </ul>
-                    <a href="../fr/tarifs.html" class="btn-ghost">Voir les tarifs</a>
+                    <a href="../fr/tarifs.html" class="btn-ghost" style="margin-top:auto;">Voir les tarifs</a>
                 </div>
             </div>
         </section>
@@ -636,7 +636,7 @@ pages_fr = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Nos créneaux d'urgence vous permettent d'être rassuré ou pris en charge sans délai.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Consulter nos disponibilités</a>
             </div>
         </section>
         '''
@@ -682,7 +682,7 @@ pages_fr = [
                             Idéal pour la traçabilité, le suivi et la comparaison d'évolution dans le temps.
                         </li>
                     </ul>
-                    <a href="https://www.heine.com/fr/produits/dermatoscopes-et-documentation-numerique/dermatoscopes/detail/99957-dermatoscope-heine-deltaone" class="btn-ghost" target="_blank" rel="noopener">Fiche technique Heine DeltaOne</a>
+                    <a href="https://www.heine.com/fr/produits/dermatoscopes-et-documentation-numerique/dermatoscopes/detail/99957-dermatoscope-heine-deltaone" class="btn-ghost" style="margin-top:auto;" target="_blank" rel="noopener">Fiche technique Heine DeltaOne</a>
                 </div>
             </div>
         </section>
@@ -697,7 +697,7 @@ pages_fr = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Nos créneaux d'urgence vous permettent d'être rassuré ou pris en charge sans délai.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Consulter nos disponibilités</a>
             </div>
         </section>
         '''
@@ -782,7 +782,7 @@ pages_fr = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Nos créneaux d'urgence vous permettent d'être rassuré ou pris en charge sans délai.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Consulter nos disponibilités</a>
             </div>
         </section>
         '''
@@ -868,7 +868,7 @@ pages_fr = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">N'attendez pas de vérifier une lésion suspecte</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Nos créneaux d'urgence vous permettent d'être rassuré ou pris en charge sans délai.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Consulter nos disponibilités</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Consulter nos disponibilités</a>
             </div>
         </section>
         '''
@@ -882,7 +882,7 @@ pages_fr = [
         <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
             <div class="container fade-up">
                 <h1 class="text-navy">Contactez-nous</h1>
-                <p style="margin-top:2rem;"><a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Réserver ma consultation maintenant</a></p>
+                <p style="margin-top:2rem;"><a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Réserver ma consultation maintenant</a></p>
             </div>
         </section>
 
@@ -1042,7 +1042,7 @@ pages_fr = [
                     <iconify-icon icon="lucide:check-circle" width="60" class="text-gold" style="margin-bottom:1.5rem;"></iconify-icon>
                     <h1 class="text-navy" style="font-size:2rem; margin-bottom:1rem;">Merci !</h1>
                     <p style="font-size:1.1rem; margin-bottom: 2.5rem;">L'envoi a parfaitement opéré.<br>Notre secrétariat prend connaissance de vos informations et reviendra très promptement vers vous !</p>
-                    <a href="../fr/index.html" class="btn-ghost">Retourner à l'accueil</a>
+                    <a href="../fr/index.html" class="btn-ghost" style="margin-top:auto;">Retourner à l'accueil</a>
                 </div>
             </div>
         </section>
@@ -1069,8 +1069,8 @@ pages_en = [
                         Churchill SkinCheck is the only service in Brussels combining precise dermatoscopic diagnosis and surgical excision by plastic surgeons — all within a single consultation.
                     </p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Book an appointment</a>
-                        <a href="#services" class="btn-ghost">Discover our services</a>
+                        <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Book an appointment</a>
+                        <a href="#services" class="btn-ghost" style="margin-top:auto;">Discover our services</a>
                     </div>
                 </div>
                 <div class="fade-up" style="transition-delay: 0.2s;">
@@ -1140,21 +1140,21 @@ pages_en = [
                         <h3 style="margin-bottom:1rem;">Comprehensive Skin Check</h3>
                         <p style="flex-grow:1;">Complete examination of your lesions with the Heine DeltaOne dermatoscope. Your surgeon analyzes every mole following the ABCDE rule and pinpoints which require monitoring or excision.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Duration: 20–30 min</p>
-                        <a href="/en/services.html#bilan" class="btn-ghost">Learn more</a>
+                        <a href="/en/services.html#bilan" class="btn-ghost" style="margin-top:auto;">Learn more</a>
                     </div>
                     <div class="card card-gold fade-up" style="display:flex; flex-direction:column; transition-delay:0.1s;">
                         <span class="badge" style="align-self:flex-start; background:var(--churchill-gold); color:#1a2b42;">Medical Procedure • Mutual Refund</span>
                         <h3 style="margin-bottom:1rem;">Suspect Mole Excision</h3>
                         <p style="flex-grow:1;">Surgical excision under local anesthesia of an atypical or suspect mole, followed by lab pathology analysis. In majority of circumstances, excision operates during the same diagnostics appointment.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Duration: 30–45 min</p>
-                        <a href="/en/services.html#medical" class="btn-gold">Learn more</a>
+                        <a href="/en/services.html#medical" class="btn-gold" style="margin-top:auto;">Learn more</a>
                     </div>
                     <div class="card fade-up" style="display:flex; flex-direction:column; transition-delay:0.2s;">
                         <span class="badge" style="align-self:flex-start;">Comfort & Aesthetic</span>
                         <h3 style="margin-bottom:1rem;">Cosmetic Excision</h3>
                         <p style="flex-grow:1;">Removal of completely benign beauty marks for cosmetic aesthetic or daily comfort. Perfected strictly by an established plastic surgeon specifically aimed to reduce long term visibly scarring.</p>
                         <p class="text-muted" style="margin: 1.5rem 0; font-size:0.85rem;"><iconify-icon icon="lucide:clock"></iconify-icon> Duration: 20–40 min</p>
-                        <a href="/en/services.html#cosmetique" class="btn-ghost">Learn more</a>
+                        <a href="/en/services.html#cosmetique" class="btn-ghost" style="margin-top:auto;">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -1170,7 +1170,7 @@ pages_en = [
                         The Heine DeltaOne dermatoscope embodies the gold standard tool heavily practiced globally among elite specialists. Featuring high definition optic zoom allied with LED illumination polarization renders deep skin infrastructures transparent, inaccessible directly to naked physiological eyes. Through this apparatus, surgeons execute uncompromised evaluation precision rendering unneeded excisions nil.
                     </p>
                     <a href="https://www.heine.com/" target="_blank" rel="noopener" class="text-gold" style="font-size:0.9rem; text-decoration:underline; display:inline-block; margin-bottom:2rem;">Explore this hardware deeper</a><br>
-                    <a href="/en/technology.html" class="btn-ghost">Our tech in detail</a>
+                    <a href="/en/technology.html" class="btn-ghost" style="margin-top:auto;">Our tech in detail</a>
                 </div>
                 <div class="fade-up">
                     <div class="card" style="padding:1rem;">
@@ -1190,7 +1190,7 @@ pages_en = [
                 </div>
                 <div class="layout-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
                     <div class="card fade-up text-center">
-                        <img src="https://placehold.co/300x300?text=Photo+1" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:150px; height:150px; object-fit:cover;">
+                        <img src="https://placehold.co/300x300?text=Photo+1" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:200px; height:200px; object-fit:cover;">
                         <h3>Dr. [Name] [Surname] <!-- REMPLACER --></h3>
                         <p class="text-gold" style="font-weight:500; font-size:0.9rem; margin-bottom:0.25rem;">Plastic Surgeon</p>
                         <p class="text-muted" style="font-size:0.8rem; margin-bottom:1rem;">INAMI: [INAMI 1]</p>
@@ -1199,7 +1199,7 @@ pages_en = [
                         <p style="font-size:0.8rem; font-weight:600; color:var(--churchill-navy);">Dermato-surgery & skin reconstruction</p>
                     </div>
                     <div class="card fade-up text-center" style="transition-delay:0.1s;">
-                        <img src="https://placehold.co/300x300?text=Photo+2" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:150px; height:150px; object-fit:cover;">
+                        <img src="https://placehold.co/300x300?text=Photo+2" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:200px; height:200px; object-fit:cover;">
                         <h3>Dr. [Name] [Surname] <!-- REMPLACER --></h3>
                         <p class="text-gold" style="font-weight:500; font-size:0.9rem; margin-bottom:0.25rem;">Plastic Surgeon</p>
                         <p class="text-muted" style="font-size:0.8rem; margin-bottom:1rem;">INAMI: [INAMI 2]</p>
@@ -1208,7 +1208,7 @@ pages_en = [
                         <p style="font-size:0.8rem; font-weight:600; color:var(--churchill-navy);">Pigmented lesion surgery & aesthetic scarring</p>
                     </div>
                     <div class="card fade-up text-center" style="transition-delay:0.2s;">
-                        <img src="https://placehold.co/300x300?text=Photo+3" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:150px; height:150px; object-fit:cover;">
+                        <img src="https://placehold.co/300x300?text=Photo+3" alt="Dr" style="border-radius: 50%; margin: 0 auto 1.5rem; width:200px; height:200px; object-fit:cover;">
                         <h3>Dr. [Name] [Surname] <!-- REMPLACER --></h3>
                         <p class="text-gold" style="font-weight:500; font-size:0.9rem; margin-bottom:0.25rem;">Plastic Surgeon</p>
                         <p class="text-muted" style="font-size:0.8rem; margin-bottom:1rem;">INAMI: [INAMI 3]</p>
@@ -1218,7 +1218,7 @@ pages_en = [
                     </div>
                 </div>
                 <div class="text-center mt-5" style="margin-top:3rem;">
-                    <a href="/en/team.html" class="btn-ghost">Meet the full team</a>
+                    <a href="/en/team.html" class="btn-ghost" style="margin-top:auto;">Meet the full team</a>
                 </div>
             </div>
         </section>
@@ -1251,7 +1251,7 @@ pages_en = [
                     <h3 style="margin-bottom:1rem;">Reimbursement Data</h3>
                     <p style="margin-bottom:1rem;">Medical necessity driven excision of flagged suspect lesions receives <strong>partial regulatory refund</strong> directly aligned utilizing localized mutuality organizations in Belgium. Cosmetic demands unfortunately carry no reciprocal refunds directly.</p>
                     <p style="margin-bottom:2rem;">Clarity unfolds during consultation orientation thoroughly. Please arrive physically prepared showcasing standard issued ID (eID) alongside insurance sticker document (vignette).</p>
-                    <a href="/en/pricing.html" class="btn-ghost">Review complete fee schedule</a>
+                    <a href="/en/pricing.html" class="btn-ghost" style="margin-top:auto;">Review complete fee schedule</a>
                 </div>
             </div>
         </section>
@@ -1273,7 +1273,7 @@ pages_en = [
                     <div class="faq-answer">Plan casually between 20 advancing to 45 mins spanning standard visual examinations up expanding toward full surgical minor excisions.</div>
                 </div>
                 <div class="text-center" style="margin-top:3rem;">
-                    <a href="/en/faq.html" class="btn-ghost">All common questions resolved</a>
+                    <a href="/en/faq.html" class="btn-ghost" style="margin-top:auto;">All common questions resolved</a>
                 </div>
             </div>
         </section>
@@ -1283,7 +1283,7 @@ pages_en = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">Book an appointment today</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Consult a plastic surgeon specialized in dermato-surgery at Clinique Churchill, Uccle.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Book my consultation</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Book my consultation</a>
                 <p style="margin-top:1.5rem; font-size:0.85rem; color:rgba(255,255,255,0.7);">No prescription needed · Mutual coverage if medical indication · Results in 10-15 days</p>
             </div>
         </section>
@@ -1314,7 +1314,7 @@ pages_en = [
                         <li><strong>Time allocation:</strong> 20–30 min</li>
                         <li><strong>Refunds:</strong> Standard physician consultation parameter bounds.</li>
                     </ul>
-                    <a href="[LIEN_RDV]" class="btn-ghost">Schedule visit</a>
+                    <a href="[LIEN_RDV]" class="btn-ghost" style="margin-top:auto;">Schedule visit</a>
                 </div>
             </div>
         </section>
@@ -1339,7 +1339,7 @@ pages_en = [
                         <p><strong>Insurance Coverage:</strong> Incomplete offset validated locally matching native resident ID and health tag markers appropriately.</p>
                     </div>
                     
-                    <a href="[LIEN_RDV]" class="btn-gold">Secure timeframe</a>
+                    <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;">Secure timeframe</a>
                 </div>
             </div>
         </section>
@@ -1355,7 +1355,7 @@ pages_en = [
                         <li><strong>Timeline:</strong> 20–40 min localized count dependent.</li>
                         <li><strong>Refund Status:</strong> Zero structured standard refunds globally natively.</li>
                     </ul>
-                    <a href="/en/pricing.html" class="btn-ghost">Pricing matrix details</a>
+                    <a href="/en/pricing.html" class="btn-ghost" style="margin-top:auto;">Pricing matrix details</a>
                 </div>
             </div>
         </section>
@@ -1477,7 +1477,7 @@ pages_en = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">Don't delay suspect evaluations</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Exclusive immediate appointment spaces unlock accelerated health assurances constantly.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Grab availability instantly</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Grab availability instantly</a>
             </div>
         </section>
         '''
@@ -1523,7 +1523,7 @@ pages_en = [
                             Sustains deep timeline recording tracks effectively mirroring evolution patterns strictly logging reliable historic variations sequentially.
                         </li>
                     </ul>
-                    <a href="https://www.heine.com/fr/produits/dermatoscopes-et-documentation-numerique/dermatoscopes/detail/99957-dermatoscope-heine-deltaone" class="btn-ghost" target="_blank" rel="noopener">Heine DeltaOne Tech Datasheet Matrix</a>
+                    <a href="https://www.heine.com/fr/produits/dermatoscopes-et-documentation-numerique/dermatoscopes/detail/99957-dermatoscope-heine-deltaone" class="btn-ghost" style="margin-top:auto;" target="_blank" rel="noopener">Heine DeltaOne Tech Datasheet Matrix</a>
                 </div>
             </div>
         </section>
@@ -1538,7 +1538,7 @@ pages_en = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">Book an appointment today</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Secure immediate availability crossing timeline constraints optimally.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Schedule rapidly online</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Schedule rapidly online</a>
             </div>
         </section>
         '''
@@ -1623,7 +1623,7 @@ pages_en = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">Clear medical steps immediately</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Expedited emergency timelines ready handling issues without delays completely.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Confirm schedule instantly</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Confirm schedule instantly</a>
             </div>
         </section>
         '''
@@ -1709,7 +1709,7 @@ pages_en = [
             <div class="container fade-up">
                 <h2 style="margin-bottom: 1rem;">Confirm rapid actions ideally today</h2>
                 <p style="margin-bottom: 2.5rem; font-size: 1.125rem; opacity: 0.9;">Secure absolute schedule spots natively easily efficiently perfectly.</p>
-                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Jump directly toward matching slots</a>
+                <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Jump directly toward matching slots</a>
             </div>
         </section>
         '''
@@ -1723,7 +1723,7 @@ pages_en = [
         <section class="bg-hero-deco" style="padding-top:120px; padding-bottom:5rem; text-align:center;">
             <div class="container fade-up">
                 <h1 class="text-navy">Find us locally in Brussels</h1>
-                <p style="margin-top:2rem;"><a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Launch clinical scheduling</a></p>
+                <p style="margin-top:2rem;"><a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;" target="_blank" rel="noopener">Launch clinical scheduling</a></p>
             </div>
         </section>
 
@@ -1881,7 +1881,7 @@ pages_en = [
                     <iconify-icon icon="lucide:check-circle" width="60" class="text-gold" style="margin-bottom:1.5rem;"></iconify-icon>
                     <h1 class="text-navy" style="font-size:2rem; margin-bottom:1rem;">Validation Complete</h1>
                     <p style="font-size:1.1rem; margin-bottom: 2.5rem;">Reception registered properly successfully seamlessly practically reliably stably flawlessly perfectly efficiently ideally effectively correctly.<br>The clinical desk evaluates requests pushing back communications effectively instantly locally structurally appropriately safely reliably properly!</p>
-                    <a href="/en/index.html" class="btn-ghost">Track back landing grid fully</a>
+                    <a href="/en/index.html" class="btn-ghost" style="margin-top:auto;">Track back landing grid fully</a>
                 </div>
             </div>
         </section>
