@@ -4,41 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services | Churchill SkinCheck Brussels</title>
-    <meta name="description" content="Skin check-ups, medical and cosmetic mole removals in Brussels. By plastic surgeons at Clinique Churchill. Mutual insurance coverage if medically flagged.">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Our Services | Churchill SkinCheck">
-    <meta property="og:description" content="Skin check-ups, medical and cosmetic mole removals in Brussels. By plastic surgeons at Clinique Churchill. Mutual insurance coverage if medically flagged.">
-    <meta property="og:url" content="https://skincheck.cliniquechurchill.be/services.html">
-    <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg"> <!-- REMPLACER : URL de l'image OG -->
-    
-    <!-- hreflang -->
+    <meta name="description" content="Skin assessment, medical and cosmetic mole removal in Brussels. Performed by plastic surgeons at Clinique Churchill. Covered by Belgian health insurance when medically indicated.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Our Services | Churchill SkinCheck Brussels">
+    <meta property="og:description" content="Skin assessment, medical and cosmetic mole removal in Brussels. Performed by plastic surgeons at Clinique Churchill.">
+    <meta property="og:url" content="https://skincheck.cliniquechurchill.be/en/services.html">
+    <meta property="og:image" content="https://skincheck.cliniquechurchill.be/assets/og-image.jpg">
     <link rel="alternate" hreflang="fr" href="https://skincheck.cliniquechurchill.be/fr/services.html">
     <link rel="alternate" hreflang="en" href="https://skincheck.cliniquechurchill.be/en/services.html">
     <link rel="alternate" hreflang="x-default" href="https://skincheck.cliniquechurchill.be/">
-
     <link rel="stylesheet" href="../css/style.css">
-    
-    <!-- Iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
-    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "MedicalClinic",
       "name": "Churchill SkinCheck",
       "parentOrganization": { "@type": "Hospital", "name": "Clinique Churchill" },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Avenue Winston Churchill",
-        "addressLocality": "Uccle, Bruxelles",
-        "addressCountry": "BE"
-      },
+      "address": { "@type": "PostalAddress", "streetAddress": "Avenue Winston Churchill", "addressLocality": "Uccle, Brussels", "addressCountry": "BE" },
       "medicalSpecialty": "PlasticSurgery",
       "availableService": [
-        { "@type": "MedicalProcedure", "name": "Bilan cutané dermatoscopique" },
-        { "@type": "MedicalProcedure", "name": "Ablation chirurgicale de naevus suspect" },
-        { "@type": "MedicalProcedure", "name": "Ablation cosmétique de grains de beauté" }
+        { "@type": "MedicalProcedure", "name": "Dermoscopic skin assessment" },
+        { "@type": "MedicalProcedure", "name": "Surgical removal of suspicious naevus" },
+        { "@type": "MedicalProcedure", "name": "Cosmetic mole removal" }
       ],
       "telephone": "[TEL_CLINIQUE]",
       "url": "https://skincheck.cliniquechurchill.be"
@@ -47,220 +35,284 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header class="main-header">
-        <div class="container nav-container">
-            <a href="../en/index.html" class="logo-box">
-                <span class="logo-title">Churchill SkinCheck</span>
-                <span class="logo-sub">by Clinique Churchill</span>
-            </a>
-            
-            
-            <nav class="nav-links">
-                <a href="../en/services.html">Services</a>
-                <a href="../en/team.html">Team</a>
-                <a href="../en/technology.html">Technology</a>
-                <a href="../en/pricing.html">Pricing</a>
-                <a href="../en/faq.html">FAQ</a>
-                <a href="../en/contact.html">Contact</a>
-            </nav>
-
-
-            <div class="nav-right">
-                <a href="[LIEN_RDV]" class="btn-ghost hidden-mobile-inline" target="_blank" rel="noopener">Book Appt</a>
-                <div class="lang-switch hidden-mobile">
-                    <a href="../fr/services.html" class="">FR</a>
-                    <a href="../en/services.html" class="active">EN</a>
-                </div>
-                <button class="burger-btn" aria-label="Menu">
-                    <span class="burger-icon"></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        
-        <nav class="nav-links-mobile">
-            <a href="../en/services.html">Services</a>
+<header class="main-header">
+    <div class="container nav-container">
+        <a href="../en/index.html" class="logo-box">
+            <span class="logo-title">Churchill SkinCheck</span>
+            <span class="logo-sub">by Clinique Churchill</span>
+        </a>
+        <nav class="nav-links">
+            <a href="../en/services.html" style="color: var(--churchill-gold);">Services</a>
             <a href="../en/team.html">Team</a>
             <a href="../en/technology.html">Technology</a>
             <a href="../en/pricing.html">Pricing</a>
             <a href="../en/faq.html">FAQ</a>
             <a href="../en/contact.html">Contact</a>
         </nav>
-
-        <div class="lang-switch">
-                    <a href="../fr/services.html" class="">FR</a> | 
-                    <a href="../en/services.html" class="active">EN</a>
-        </div>
-        <div class="mt-4">
-            <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener" style="justify-content:center;">Book Appointment</a>
+        <div class="nav-right">
+            <a href="[LIEN_RDV]" class="btn-ghost hidden-mobile-inline" target="_blank" rel="noopener">Book a consultation</a>
+            <div class="lang-switch hidden-mobile">
+                <a href="../fr/services.html">FR</a>
+                <a href="../en/services.html" class="active">EN</a>
+            </div>
+            <button class="burger-btn" aria-label="Open menu"><span class="burger-icon"></span></button>
         </div>
     </div>
+</header>
+<div class="mobile-menu">
+    <nav class="nav-links-mobile">
+        <a href="../en/services.html">Services</a>
+        <a href="../en/team.html">Team</a>
+        <a href="../en/technology.html">Technology</a>
+        <a href="../en/pricing.html">Pricing</a>
+        <a href="../en/faq.html">FAQ</a>
+        <a href="../en/contact.html">Contact</a>
+    </nav>
+    <div class="lang-switch">
+        <a href="../fr/services.html">FR</a> |
+        <a href="../en/services.html" class="active">EN</a>
+    </div>
+    <div class="mobile-cta">
+        <a href="[LIEN_RDV]" class="btn-gold w-100" target="_blank" rel="noopener">Book a consultation</a>
+    </div>
+</div>
 
-    <main style="padding-top: 80px;">
-        
-        <section style="padding-top:120px; padding-bottom:5rem; text-align:center;">
-            <div class="bg-hero-deco"></div>
-            <div class="container fade-up">
-                <h1 class="text-navy">Our Dermato-Surgery Offerings</h1>
-                <p class="text-secondary" style="font-size:1.15rem; margin-top:1rem;">From dermatoscopic examination bridging across surgical removals sequentially — efficiently condensed spanning a single appointment.</p>
-            </div>
-        </section>
-        
-        <section id="bilan" class="section-alt">
-            <div class="container layout-grid">
-                <div class="fade-up">
-                    <span class="badge">Prevention Phase</span>
-                    <h2 class="text-navy" style="margin-bottom:1.5rem;">Total Body Mole Audit</h2>
-                    <p style="margin-bottom:1rem;">Top surgeons conduct structural overviews scrutinizing complete physiological coverage relying intensely utilizing optical integrity generated strictly by Heine DeltaOne modules. Pathologies analyzed directly align with classical ABCDE rule formulas (Asymmetry, Borders, Colors, Diameter, Evolution).</p>
-                    <p style="margin-bottom:1rem;">Identifying benign versus risk-heavy anomalous shapes is critical. Opposite a generalized basic dermatologist approach, specific operational extraction acts unfold sequentially identical concurrent to discovery.</p>
-                    <ul style="margin-bottom:2rem; padding-left:1.5rem; list-style:disc; font-weight:500;">
-                        <li><strong>Classic Indicators:</strong> Annual review routines, familial melanoma pathways, light genetics.</li>
-                        <li><strong>Time allocation:</strong> 20–30 min</li>
-                        <li><strong>Refunds:</strong> Standard physician consultation parameter bounds.</li>
-                    </ul>
-                    <a href="[LIEN_RDV]" class="btn-ghost" style="margin-top:auto;">Schedule visit</a>
-                </div>
-            </div>
-        </section>
+<main style="padding-top: 80px;">
 
-        <section id="medical">
-            <div class="container layout-grid">
-                <div class="fade-up card card-gold" style="padding:3rem;">
-                    <span class="badge" style="background:#C9A96E; color:#1a2b42; border-color:#C9A96E;">Mutual System Supported Portion</span>
-                    <h2 class="text-navy" style="margin-bottom:1.5rem;">Atypical Mole Ablation</h2>
-                    <p style="margin-bottom:1rem;">Once flagged suspicious visually via microscope verification arrays, rapid micro-excision initializes shielded entirely operating zero-pain superficial local anesthesia boundaries. Surgeon proficiency controls tissue loss ratios minimizing aggressive skin cuts maintaining closure elegance maximizing fold-masking.</p>
-                    <p style="margin-bottom:1.5rem;">Mass forwarded directly evaluating oncological lab pathology analysis loops systematically. Results broadcasted seamlessly toward patients around 10-15 business daylight constraints.</p>
-                    
-                    <ul style="margin-bottom:2rem; font-weight:500;">
-                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Local anesthetics mapping out pain</li>
-                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Simultaneous check alongside immediate excision execution</li>
-                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Rigorous anatomic pathological diagnosis trace</li>
-                        <li style="margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;"><iconify-icon icon="lucide:check-circle" class="text-gold"></iconify-icon> Conclusive info communicated securely</li>
-                    </ul>
-                    
-                    <div style="background:var(--bg-secondary); padding:1rem; border-radius:0.5rem; font-size:0.9rem; margin-bottom:2rem;">
-                        <p style="margin-bottom:0.5rem;"><strong>Duration factor:</strong> 30–45 min (consult included)</p>
-                        <p><strong>Insurance Coverage:</strong> Incomplete offset validated locally matching native resident ID and health tag markers appropriately.</p>
-                    </div>
-                    
-                    <a href="[LIEN_RDV]" class="btn-gold" style="margin-top:auto;">Secure timeframe</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="cosmetique" class="section-alt">
-            <div class="container layout-grid">
-                <div class="fade-up">
-                    <span class="badge">Aesthetic Tuning</span>
-                    <h2 class="text-navy" style="margin-bottom:1.5rem;">Cosmetic Mole Correction</h2>
-                    <p style="margin-bottom:1rem;">Targeted eliminating harmless moles purely pursuing visible aesthetic enhancements or tactile convenience dissolving friction irritations stemming off jewelry and fashion threads alike. Absolute parity applying medical standards despite cosmetic focus definitions securely isolating wound healing optimally masking linear marks aggressively.</p>
-                    <p style="margin-bottom:1.5rem;">Harmless classification concretely sealed preceding surgical commencement reliably. Day-of operability scales identically alongside medical instances. Despite benign outlooks initially estimated, protocol drives lab analytics eliminating absolute fractional hidden variables inevitably.</p>
-                    <ul style="margin-bottom:2rem; padding-left:1.5rem; list-style:disc; font-weight:500;">
-                        <li><strong>Timeline:</strong> 20–40 min localized count dependent.</li>
-                        <li><strong>Refund Status:</strong> Zero structured standard refunds globally natively.</li>
-                    </ul>
-                    <a href="/en/pricing.html" class="btn-ghost" style="margin-top:auto;">Pricing matrix details</a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container fade-up">
-                <h2 class="text-navy text-center" style="margin-bottom:3rem;">Siding security alongside peak aesthetics</h2>
-                <div class="table-glass">
-                    <table style="width:100%;">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Churchill SkinCheck</th>
-                                <th>Standard Dermatologists</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="font-weight:500;">Diagnosing Equipment</td>
-                                <td>✓ Heine DeltaOne Grade Accuracy</td>
-                                <td>Highly variable equipment</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:500;">Same Day Clearance</td>
-                                <td>✓ Overwhelmingly executed simultaneously</td>
-                                <td>✗ Requires secondary clinic delegation</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:500;">Scar Outcome Parameters</td>
-                                <td>✓ Native plastic surgery methodologies executed</td>
-                                <td>Variable</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:500;">Anatomic Pathologic Verification</td>
-                                <td>✓ Compulsory standard applied fully</td>
-                                <td>Variable</td>
-                            </tr>
-                            <tr>
-                                <td style="font-weight:500;">Global Process Span</td>
-                                <td>✓ Consolidated into unity (1 visit)</td>
-                                <td>Minimum two appointment loops</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="text-center" style="margin-top:4rem;">
-                    <a href="[LIEN_RDV]" class="btn-gold text-center">Capture immediate appointment scheduling</a>
-                </div>
-            </div>
-        </section>
-        
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <div class="logo-box" style="margin-bottom: 1.5rem;">
-                        <span class="logo-title" style="color:#ffffff;">Churchill SkinCheck</span>
-                        <span class="logo-sub">by Clinique Churchill</span>
-                    </div>
-                </div>
-                
-                <div class="footer-col" style="justify-self: center;">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="../en/services.html#bilan">Comprehensive mole check</a></li>
-                        <li><a href="../en/services.html#medical">Medical lesion removal</a></li>
-                        <li><a href="../en/services.html#cosmetique">Cosmetic mole removal</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>Avenue Winston Churchill, Uccle, Brussels <!-- REMPLACER --></li>
-                        <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
-                        <li>[TEL_CLINIQUE]</li>
-                    </ul>
-                    <div class="social-icons">
-                        <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
-                        <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
-                        <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Brussels</span>
-                <span class="text-muted">Site by Roots Agency | <a href="../en/legal.html" class="text-muted">Legal mentions</a></span>
-            </div>
-
+    <section class="page-hero">
+        <div class="bg-hero-deco"></div>
+        <div class="container fade-up">
+            <span class="badge">Dermo-surgery</span>
+            <h1 class="text-navy">Our Dermo-Surgery Services</h1>
+            <p class="text-secondary">From dermoscopic examination to surgical removal — all in a single consultation.</p>
         </div>
-    </footer>
+    </section>
 
-    <!-- Scripts module to allow config imports -->
-    <script type="module" src="../js/config.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../js/contact.js"></script>
+    <!-- SERVICE 1 — SKIN ASSESSMENT -->
+    <section id="assessment" class="section-alt">
+        <div class="container">
+            <div class="layout-grid">
+                <div class="fade-up">
+                    <span class="badge">Prevention</span>
+                    <h2 class="text-navy" style="margin-bottom: 1.5rem;">Full Skin Assessment</h2>
+                    <p style="margin-bottom: 1.25rem; line-height: 1.8;">
+                        Our surgeon examines all your skin lesions using the Heine DeltaOne dermatoscope. Each naevus is analysed according to the ABCDE rule: <strong>A</strong>symmetry, <strong>B</strong>order, <strong>C</strong>olour, <strong>D</strong>iameter, <strong>E</strong>volution.
+                    </p>
+                    <p style="margin-bottom: 1.75rem; line-height: 1.8;">
+                        The assessment identifies lesions requiring removal, those needing regular monitoring, and those that are entirely benign. Unlike a standard dermatology consultation, our plastic surgeon can — if removal is indicated — perform it immediately during the same visit.
+                    </p>
+                    <div class="info-box">
+                        <p><strong>Indications:</strong> Annual check-up, family history of melanoma, fair skin, high sun exposure, evolving or suspicious mole.</p>
+                        <p style="margin-top: 0.5rem;"><strong>Duration:</strong> 20–30 min &nbsp;·&nbsp; <strong>Reimbursement:</strong> Standard medical consultation rate</p>
+                    </div>
+                    <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Book a consultation</a>
+                </div>
+                <div class="fade-up" style="transition-delay: 0.15s;">
+                    <div class="card card-gold" style="padding: 2.5rem;">
+                        <iconify-icon icon="lucide:scan-eye" width="40" class="text-gold" style="display: block; margin-bottom: 1.5rem;"></iconify-icon>
+                        <h3 style="margin-bottom: 1.5rem;">What we analyse</h3>
+                        <ul class="points-list">
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Asymmetry of the lesion</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Regularity of the border</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Uniformity of colour</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Diameter greater than 6 mm</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Recent changes (size, shape, colour)</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Deep structures (pigment network)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 2 — MEDICAL REMOVAL -->
+    <section id="medical">
+        <div class="container">
+            <div class="layout-grid">
+                <div class="fade-up" style="order: 2;">
+                    <div class="card card-gold" style="padding: 2.5rem;">
+                        <iconify-icon icon="lucide:shield-check" width="40" class="text-gold" style="display: block; margin-bottom: 1.5rem;"></iconify-icon>
+                        <h3 style="margin-bottom: 1.5rem;">Key points</h3>
+                        <ul class="points-list">
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Local anaesthesia — painless procedure</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Removal and consultation possible in the same visit</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Systematic histopathological analysis</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Results communicated within 10–15 business days</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Optimised healing using plastic surgery techniques</li>
+                        </ul>
+                        <div class="info-box" style="margin-bottom: 0;">
+                            <p><strong>Duration:</strong> 30–45 min (consultation + removal)</p>
+                            <p style="margin-top: 0.5rem;"><strong>Reimbursement:</strong> Partially reimbursed if medical indication confirmed. Bring your ID card and health insurance card.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-up" style="order: 1; transition-delay: 0.1s;">
+                    <span class="badge badge-solid">Partially reimbursed — Belgian health insurance</span>
+                    <h2 class="text-navy" style="margin-bottom: 1.5rem;">Suspicious Mole Removal</h2>
+                    <p style="margin-bottom: 1.25rem; line-height: 1.8;">
+                        When a lesion is identified as suspicious or atypical, our plastic surgeon performs a surgical excision under local anaesthesia. The procedure involves removing the lesion with an appropriate safety margin, then suturing the skin with maximum aesthetic care: respect for natural tension lines, ultra-fine superficial sutures, repositioning the scar within natural skin folds where possible.
+                    </p>
+                    <p style="margin-bottom: 2rem; line-height: 1.8;">
+                        The lesion is systematically sent for histopathological analysis at a specialist laboratory. Results are communicated to you within 10 to 15 business days.
+                    </p>
+                    <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Book a consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICE 3 — COSMETIC REMOVAL -->
+    <section id="cosmetic" class="section-alt">
+        <div class="container">
+            <div class="layout-grid">
+                <div class="fade-up">
+                    <span class="badge">Comfort & Aesthetics</span>
+                    <h2 class="text-navy" style="margin-bottom: 1.5rem;">Cosmetic Mole Removal</h2>
+                    <p style="margin-bottom: 1.25rem; line-height: 1.8;">
+                        Would you like to have a benign mole removed for aesthetic or comfort reasons — because it bothers you visually, catches on clothing or jewellery, or causes irritation? Our plastic surgeons perform this type of removal with the same surgical rigour as for a medical indication.
+                    </p>
+                    <p style="margin-bottom: 1.75rem; line-height: 1.8;">
+                        The aesthetic result is their priority: every incision is planned to minimise the visible scar in the long term. A benign mole is confirmed during the prior consultation. Removal can in most cases be performed on the same day. The lesion is nonetheless sent for histopathological analysis to rule out any residual risk.
+                    </p>
+                    <ul class="points-list" style="margin-bottom: 1.75rem;">
+                        <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Benign mole confirmed before removal</li>
+                        <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Optimal scarring result — plastic surgery technique</li>
+                        <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Removal possible on the day of consultation</li>
+                        <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Histopathological analysis included</li>
+                    </ul>
+                    <div class="info-box" style="margin-bottom: 1.75rem;">
+                        <p><strong>Duration:</strong> 20–40 min depending on number and location</p>
+                        <p style="margin-top: 0.5rem;"><strong>Reimbursement:</strong> <em>Not reimbursed</em> (cosmetic procedure). Some supplementary insurers provide partial coverage — check with your insurer.</p>
+                    </div>
+                    <a href="../en/pricing.html" class="btn-ghost">View pricing</a>
+                </div>
+                <div class="fade-up" style="transition-delay: 0.15s;">
+                    <div class="card" style="padding: 2.5rem;">
+                        <iconify-icon icon="lucide:sparkles" width="40" class="text-gold" style="display: block; margin-bottom: 1.5rem;"></iconify-icon>
+                        <h3 style="margin-bottom: 1rem;">Why choose a plastic surgeon?</h3>
+                        <p style="font-size: 0.97rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                            A plastic surgeon uses specialised suture techniques that minimise long-term scarring — something most GPs or dermatologists cannot guarantee.
+                        </p>
+                        <ul class="points-list">
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Incision placed along natural tension lines</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Ultra-fine superficial sutures (absorbable or not)</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Scar repositioned within natural skin folds</li>
+                            <li><iconify-icon icon="lucide:check-circle" width="18"></iconify-icon> Personalised post-operative follow-up</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARISON TABLE -->
+    <section>
+        <div class="container fade-up">
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <span class="badge">Comparison</span>
+                <h2 class="text-navy">Churchill SkinCheck vs Standard Dermatologist</h2>
+            </div>
+            <div class="table-wrapper" style="max-width: 900px; margin: 0 auto 3rem;">
+                <table class="table-glass">
+                    <thead>
+                        <tr>
+                            <th style="width: 35%;"></th>
+                            <th>Churchill SkinCheck</th>
+                            <th>Standard Dermatologist</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Diagnosis</td>
+                            <td><span class="check">✓</span> Heine DeltaOne dermoscopy</td>
+                            <td>Varies by equipment</td>
+                        </tr>
+                        <tr>
+                            <td>Same-day removal</td>
+                            <td><span class="check">✓</span> In the majority of cases</td>
+                            <td><span class="cross">✗</span> Referral to a surgeon</td>
+                        </tr>
+                        <tr>
+                            <td>Scarring result</td>
+                            <td><span class="check">✓</span> Plastic surgery techniques</td>
+                            <td>Variable</td>
+                        </tr>
+                        <tr>
+                            <td>Histopathological analysis</td>
+                            <td><span class="check">✓</span> Systematic</td>
+                            <td>Variable</td>
+                        </tr>
+                        <tr>
+                            <td>Overall timeframe</td>
+                            <td><span class="check">✓</span> Single consultation</td>
+                            <td>2 appointments minimum</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-center">
+                <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Book your consultation now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-navy text-center">
+        <div class="container-narrow fade-up">
+            <h2 style="margin-bottom: 1rem;">Book your appointment today</h2>
+            <p style="margin-bottom: 2.5rem; font-size: 1.1rem; color: rgba(255,255,255,0.8);">
+                Consult a plastic surgeon specialised in dermo-surgery at Clinique Churchill, Uccle.
+            </p>
+            <a href="[LIEN_RDV]" class="btn-gold" target="_blank" rel="noopener">Reserve my consultation</a>
+            <p style="margin-top: 1.75rem; font-size: 0.82rem; color: rgba(255,255,255,0.5);">
+                No referral needed · Health insurance coverage if medically indicated · Results within 10–15 days
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo-box" style="margin-bottom: 1.5rem;">
+                    <span class="logo-title" style="color: #fff;">Churchill SkinCheck</span>
+                    <span class="logo-sub">by Clinique Churchill</span>
+                </div>
+                <p class="footer-tagline">Precision dermo-surgery by plastic surgeons in Brussels.</p>
+                <div class="social-icons">
+                    <a href="[INSTAGRAM]" aria-label="Instagram"><iconify-icon icon="lucide:instagram"></iconify-icon></a>
+                    <a href="[FACEBOOK]" aria-label="Facebook"><iconify-icon icon="lucide:facebook"></iconify-icon></a>
+                    <a href="[LINKEDIN]" aria-label="LinkedIn"><iconify-icon icon="lucide:linkedin"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../en/services.html">Our Services</a></li>
+                    <li><a href="../en/team.html">Our Team</a></li>
+                    <li><a href="../en/technology.html">Technology</a></li>
+                    <li><a href="../en/pricing.html">Pricing</a></li>
+                    <li><a href="../en/faq.html">FAQ</a></li>
+                    <li><a href="../en/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Avenue Winston Churchill, 1180 Uccle, Brussels</li>
+                    <li><a href="tel:[TEL_CLINIQUE]">[TEL_CLINIQUE]</a></li>
+                    <li><a href="mailto:[EMAIL_CONTACT]">[EMAIL_CONTACT]</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Churchill SkinCheck — Clinique Churchill, Uccle, Brussels</span>
+            <span>Built by Roots Agency &nbsp;|&nbsp; <a href="../en/legal.html">Legal notice</a></span>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
 </body>
 </html>
