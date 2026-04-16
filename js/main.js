@@ -16,9 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenu  = document.querySelector('.mobile-menu');
 
   if (burgerBtn && mobileMenu) {
-    const overlay = document.createElement('div');
-    overlay.className = 'mobile-overlay';
-    document.body.appendChild(overlay);
+    let overlay = document.querySelector('.mobile-overlay');
+    if (!overlay) {
+      overlay = document.createElement('div');
+      overlay.className = 'mobile-overlay';
+      document.body.appendChild(overlay);
+    }
 
     const openMenu  = () => {
       burgerBtn.classList.add('active');
